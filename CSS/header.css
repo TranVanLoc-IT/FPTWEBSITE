@@ -1,0 +1,383 @@
+*{
+    box-sizing: border-box;
+    text-align: center;
+    text-decoration: none;
+}
+/* css group*/
+a{
+    color: white;
+    text-decoration: none;
+}
+input{
+    text-align: left;
+}
+a:hover{
+    text-decoration: none;
+    opacity: 0.9;
+}
+#header{
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    background-color: red;
+    position: fixed;
+}
+.w40-h40-bw-r5{
+    border-radius: 50%;
+    width: 40px;
+    background-color: white;
+    height: 40px;
+}
+.no-style-list{
+    list-style-type: none;
+}
+details{
+    width: 100%;
+}
+summary{
+    text-align: left;
+}
+li{
+    text-align: left;
+}
+.text-left{
+    text-align: left;
+}
+/* nav-bar css*/
+.nav-bar > div h5{
+    margin-top: 40px;
+    font-weight: bold;
+}
+.nav-bar > div i:not(.icon-search){
+    position: absolute;
+    margin-top: 9px;
+    margin-left: -15px;
+}
+.nav-bar > div{
+    height: 100%;
+}
+.nav-bar{
+    height: 60%;
+    width: 100%;
+    padding: 5px auto;
+}
+.nav-bar > div i:not(.icon-search){
+    padding-left: 5px;
+}
+.logo-header{
+    height: 85px;
+    margin-top: -9px;
+    background-size: cover;
+}
+.nav-search {
+    margin: 5px 0px;
+}
+.in, .circle-left, .circle-right{
+    height: 65%;
+    margin-top: 5px;
+}
+.circle-right{
+    margin-left: -33%;
+    padding: 8px;
+}
+.circle-left{
+    margin-left: 57%;
+}
+.in {
+    position: relative;
+    width: 100%;
+    color: black;
+    border: none;
+    outline: none;
+    overflow-x: hidden;
+    text-align: left;
+}
+
+.icon-search {
+    color: black;
+    position: relative;
+    border-radius: 50%;
+    outline: 5px red solid;
+    outline-offset: 7px;
+}
+
+.in-reset {
+    display: none;
+    outline: none;
+}
+i{
+    font-size: 22px;
+    font-weight: bold;
+}
+/* nav-customer css*/
+.product-mount, .shipping-mount{
+    font-size: 10px;
+    display: inline;
+    margin-left: -10px;
+}
+.nav-customer{
+    display: inline-block;
+    justify-content: space-around;
+    color: white;
+}
+.nav-customer > div:hover, .nav-mobile div:hover{
+    border-bottom: 2px solid white;
+    color: rgb(12, 12, 12);
+}
+.cus-hot-news > i{
+    animation: advertText 0.2s linear infinite alternate;
+}
+.drop-list-item{
+    position: absolute;
+    width: 180px;
+    color: black;
+    display: none;
+    padding: 0;
+    top: 130px;
+    background-color: white;
+    box-shadow: 2px 2px 3px black;
+}
+
+.nav-customer > div:hover .drop-list-item{
+    display: block;
+    line-height: 18px;
+    color: gray;
+    transition: top 0.3 ease;
+    top:62px;
+}
+.nav-customer > div{
+    font-weight: bold;
+    height: 100%;
+}
+.drop-list-item > li{
+    font-size: 15px;
+    padding: 15px;
+    width: 100%;
+}
+.drop-list-item > li:hover{
+    color: black;
+    background-color: rgb(211, 83, 83);
+}
+/* mobile */
+.menu-mobile-icon{
+   margin-top: 0 !important;
+   height: 40px;
+   width: 60px;
+   padding-right: 30px;
+   color: white;
+   line-height: 40px;
+}
+.nav-mobile{
+    visibility: hidden;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    vertical-align: baseline;
+    right: 30px;
+    width: 120px;
+}
+.nav-mobile div i {
+    font-size: 28px;
+}
+.nav-mobile div i .mount-of{
+    top: 0px;
+    left: 28px;
+    font-size: 12px;
+    position: absolute;
+}
+.sublist-mobile-js{
+    width: 80%;
+    overflow: hidden;
+    margin-right: 0px;
+    height: 0px;
+    padding: 0px;
+    transition: height 1s linear;
+}
+.sublist-mobile a:hover li{
+    color: blue;
+}
+.sublist-mobile > li, .sublist-mobile a li{
+    width: 150px;
+    text-align: left;
+    color: black;
+    line-height: 25px;
+}
+.mobile-menu{
+    top: 45px;
+}
+div.mobile-menu:hover .drop-list-item{
+    display: block;
+    top: 100%;
+    right: -30px;
+    animation: hideToShow 1s linear;
+}
+.mobile-menu ul li i{
+    color: black !important;
+}
+.filter-list{
+    overflow: hidden;
+    height: 0;
+    transition: height 1s linear;
+    padding-left: 10px;
+}
+.sublist-mobile li:hover .filter-list{
+    height: 100px;
+    line-height: 30px;
+}
+.sublist-mobile{
+    height: auto;
+}
+.sublist-mobile li{
+    line-height: 35px;
+    padding-left: 17px;
+}
+
+li.product-portfolio-mobile:hover .sublist-mobile{
+    line-height: 30px;
+}
+/* danh mục sản phẩm*/
+.product-bar{
+    background-color: black;
+    height: 40%;
+    text-align: center;
+    line-height: 40%;
+}
+.portfolio-list{
+    width: 80%;
+    margin-left: 10%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: -10px;
+    height: 100%;
+    line-height: 50px;
+}
+.portfolio
+{
+    font-size: 14px !important;
+}
+.portfolio-list > a{
+    font-size: 16px;
+    text-transform: uppercase;
+}
+/* product-summary-view*/
+.product-summary-view{
+    width: 82%;
+    position: absolute;
+    top: 133px;
+    left: 135px;
+    border: 1px solid gray;
+    visibility: hidden;
+    box-shadow: 2px 2px 2px gray;
+    line-height: 30px;
+    transition: top 0.15s linear, visibility 0.15s linear;
+}
+ul a{
+    color: black;
+    opacity: 0.7;
+}
+ul a:hover{
+    opacity: 1;
+    color: black;
+}
+.portfolio-list > div:hover .product-summary-view
+{
+    visibility: visible;
+    top: 100px;
+} 
+/* drop list for productbar*/
+.portfolio-list > div:hover .drop-list-item{
+    display: block;
+    transition: top 0.3 ease-in;
+    top: 100px;
+    line-height: 15px;
+    color: gray;
+    border: 1px solid gray;
+}
+.product-summary-view > div{
+    padding: 10px;
+}
+.manufacture-list{
+    padding-left: 0px;
+    column-gap: 15%;
+    column-count: 3;
+}
+.level-cost{
+    list-style-type: square;
+    padding-left: -10px;
+}
+.about-product{
+    border-right: 1px solid gray;
+}
+.best-selling{
+    border-left: 1px solid gray;
+}
+.top-selling a{
+    color: black !important;
+    line-height: 5px;
+    padding-top: 0px;
+}
+.top-selling{
+    float: left;
+    width: 50%;
+    line-height: 35px;
+    margin-left: 6px;
+}
+.img-top-sell{
+    float: left;
+}
+
+.descript-top-sell{
+    margin-top: 0px;
+    padding-left: 90px;
+    text-align: left;
+}
+.descript-top-sell a{
+    line-height: 20px;
+    width: 40px;
+}
+.descript-top-sell > p{
+    color: red; 
+    font-weight: bold;
+    text-align: left;
+}
+.img-extra-selling{
+    float: right;
+    width: 50%;
+    margin-right: -20px;
+}
+.img-extra-selling a img{
+    background-color: black;
+    width: 250px;
+    height: 260px;
+    }
+
+@keyframes upToDelivery{
+    from{
+        top: 100px;
+    }
+    to{
+        top: 65px;
+    }
+}
+@keyframes advertText{
+    0%{
+        color: rgb(2, 88, 100);
+    }
+    50%{
+        color:rgb(8, 68, 2);
+    }
+    100%{
+        color:rgb(56, 2, 63);
+    }
+}
+@keyframes hideToShow {
+    0%{
+        right: -190px;
+    }
+    50%{
+        right: -100px;
+    }
+    100%{
+        right: -30px;
+    }
+}

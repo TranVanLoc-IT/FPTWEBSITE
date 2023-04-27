@@ -1,0 +1,63 @@
+.nav-bar{
+    display: grid;
+    grid-template-columns: 5% 10% 6% 36% 38% 5%;
+    grid-template-rows: 100%;
+    grid-gap: 0px;
+}
+.logo-header{
+    grid-column: 2;
+}
+.nav-search{
+    grid-column: 4;
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+}
+.nav-customer{
+    grid-column: 5;
+    display: flex;
+    justify-content: space-around;
+}
+.circle-left{
+    grid-column: 1;
+}
+.in{
+    grid-column: 2;
+}
+.circle-right{
+    grid-column: 3;
+}
+/**/
+.product-summary-view{
+    display: grid;
+    grid-template-columns: 30% 17% 50%;
+    grid-template-rows: 100%;
+}
+.laptop > .product-summary-view
+{
+    display: grid;
+    grid-template-columns: 40% 25% 22%;
+    grid-template-rows: 100%;
+}
+.about-product{
+    grid-column: 1;
+}
+.cost-list{
+    grid-column: 2;
+}
+.best-selling{
+    grid-column: 3;
+}
+.apple .product-summary-view,
+.items .product-summary-view{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 100%;
+}
+.apple .product-summary-view .about-product,
+.items .product-summary-view .about-product{
+    grid-column: 1;
+}
+.apple .product-summary-view .best-selling,
+.items .product-summary-view .best-selling{
+    grid-column: 2;
+}
