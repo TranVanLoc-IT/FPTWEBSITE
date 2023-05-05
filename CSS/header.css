@@ -3,10 +3,12 @@
     text-align: center;
     text-decoration: none;
 }
+.clear{
+    clear: both !important;
+}
 /* css group*/
 a{
-    color: white;
-    text-decoration: none;
+    text-decoration: none !important;
 }
 input{
     text-align: left;
@@ -14,6 +16,14 @@ input{
 a:hover{
     text-decoration: none;
     opacity: 0.9;
+}
+#main{
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    right: 0;
+    bottom: 0;
 }
 #header{
     width: 100%;
@@ -30,6 +40,7 @@ a:hover{
 }
 .no-style-list{
     list-style-type: none;
+    color: black;
 }
 details{
     width: 100%;
@@ -91,6 +102,7 @@ li{
     outline: none;
     overflow-x: hidden;
     text-align: left;
+    font-size: 120%;
 }
 
 .icon-search {
@@ -110,7 +122,7 @@ i{
     font-weight: bold;
 }
 /* nav-customer css*/
-.product-mount, .shipping-mount{
+.product-mount{
     font-size: 10px;
     display: inline;
     margin-left: -10px;
@@ -120,7 +132,7 @@ i{
     justify-content: space-around;
     color: white;
 }
-.nav-customer > div:hover, .nav-mobile div:hover{
+.nav-customer > div:not(#cart-form):hover, .nav-mobile div:hover{
     border-bottom: 2px solid white;
     color: rgb(12, 12, 12);
 }
@@ -133,6 +145,7 @@ i{
     color: black;
     display: none;
     padding: 0;
+    font-weight: bold;
     top: 130px;
     background-color: white;
     box-shadow: 2px 2px 3px black;
@@ -143,20 +156,47 @@ i{
     line-height: 18px;
     color: gray;
     transition: top 0.3 ease;
-    top:62px;
+    border-top: 1px solid black;
+    top: 60%;
 }
 .nav-customer > div{
     font-weight: bold;
     height: 100%;
 }
 .drop-list-item > li{
-    font-size: 15px;
+    font-size: 15px !important;
     padding: 15px;
     width: 100%;
 }
 .drop-list-item > li:hover{
     color: black;
     background-color: rgb(211, 83, 83);
+}
+/* cart-form */
+#cart-form{
+    width: 70%;
+    border-radius: 20px;
+    height: auto;
+    max-height: max-content;
+    position: absolute ;
+    top: 150px;
+    left: 150px;
+    border: 1px solid gray;
+    background-image: linear-gradient(to top right, rgb(215, 138, 138) , rgb(229, 143, 143));
+}
+.header-cart-form{  
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: rgb(214, 180, 119);
+}
+.content-cart-form{
+    width: 100%;
+}
+.paying{
+    padding: 10px 20px;   
+    line-height: 30px;
 }
 /* mobile */
 .menu-mobile-icon{
@@ -185,23 +225,6 @@ i{
     font-size: 12px;
     position: absolute;
 }
-.sublist-mobile-js{
-    width: 80%;
-    overflow: hidden;
-    margin-right: 0px;
-    height: 0px;
-    padding: 0px;
-    transition: height 1s linear;
-}
-.sublist-mobile a:hover li{
-    color: blue;
-}
-.sublist-mobile > li, .sublist-mobile a li{
-    width: 150px;
-    text-align: left;
-    color: black;
-    line-height: 25px;
-}
 .mobile-menu{
     top: 45px;
 }
@@ -211,28 +234,14 @@ div.mobile-menu:hover .drop-list-item{
     right: -30px;
     animation: hideToShow 1s linear;
 }
-.mobile-menu ul li i{
-    color: black !important;
+.sublist-mobile-js{
+    display: none;
 }
-.filter-list{
-    overflow: hidden;
-    height: 0;
-    transition: height 1s linear;
-    padding-left: 10px;
+.sublist-mobile-js >li> a:active{
+    color: white;
 }
-.sublist-mobile li:hover .filter-list{
-    height: 100px;
-    line-height: 30px;
-}
-.sublist-mobile{
-    height: auto;
-}
-.sublist-mobile li{
-    line-height: 35px;
-    padding-left: 17px;
-}
-
-li.product-portfolio-mobile:hover .sublist-mobile{
+.mobile-dropdown-js:hover .sublist-mobile-js{
+    display: block;
     line-height: 30px;
 }
 /* danh mục sản phẩm*/
@@ -251,33 +260,34 @@ li.product-portfolio-mobile:hover .sublist-mobile{
     height: 100%;
     line-height: 50px;
 }
-.portfolio
-{
-    font-size: 14px !important;
+.portfolio-list > div{
+    max-width: max-content;
 }
-.portfolio-list > a{
-    font-size: 16px;
+.portfolio-list > div > a{
+    color: white;
     text-transform: uppercase;
+    font-size: 130%;
 }
 /* product-summary-view*/
 .product-summary-view{
     width: 82%;
+    background-color: white;
     position: absolute;
     top: 133px;
-    left: 135px;
+    left: 10%;
     border: 1px solid gray;
     visibility: hidden;
     box-shadow: 2px 2px 2px gray;
     line-height: 30px;
     transition: top 0.15s linear, visibility 0.15s linear;
 }
-ul a{
-    color: black;
-    opacity: 0.7;
+ul li a{
+    color: black !important;
+    font-size: 14px;
+    opacity: 0.8;
 }
-ul a:hover{
+ul li a:hover{
     opacity: 1;
-    color: black;
 }
 .portfolio-list > div:hover .product-summary-view
 {
@@ -295,6 +305,7 @@ ul a:hover{
 }
 .product-summary-view > div{
     padding: 10px;
+    color: black !important;
 }
 .manufacture-list{
     padding-left: 0px;
@@ -333,11 +344,13 @@ ul a:hover{
 }
 .descript-top-sell a{
     line-height: 20px;
+    font-weight: bold;
     width: 40px;
 }
 .descript-top-sell > p{
     color: red; 
     font-weight: bold;
+    font-size: 12px;
     text-align: left;
 }
 .img-extra-selling{
@@ -347,9 +360,7 @@ ul a:hover{
 }
 .img-extra-selling a img{
     background-color: black;
-    width: 250px;
-    height: 260px;
-    }
+}
 
 @keyframes upToDelivery{
     from{

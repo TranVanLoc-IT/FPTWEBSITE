@@ -7,12 +7,10 @@ var _sublistMobile = document.querySelectorAll('.sublist-mobile-js');
 for(let i = 0; i < _mobileDropdown.length; i++)
 {
     _mobileDropdown[i].addEventListener('click',function(){
-        if(_sublistMobile[i].classList.contains('sublist-mobile'))
-        {
-            _sublistMobile[i].classList.remove('sublist-mobile');
-        }
-       else
-             _sublistMobile[i].classList.add('sublist-mobile');
+        this.style.height = "auto";
+    });
+    _mobileDropdown[i].addEventListener('mouseover',function(){
+        this.style.height = "50px";
     });
 }
 // button buy-products event
