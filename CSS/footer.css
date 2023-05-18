@@ -2,7 +2,7 @@
     top: 20px;
     padding: 10px 0px;
     border: 1px solid #ccc;
-    position: relative;
+    margin: 0 auto;
     background-color: white;
 }
 [class*="tit"]{

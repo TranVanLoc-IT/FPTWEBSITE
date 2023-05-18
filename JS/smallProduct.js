@@ -20,10 +20,6 @@ const accessories = [
         title: 'Cáp, sạc'
     },
     {
-        path: '../assets/images/accessory/a6.png',
-        title: 'Pin dự phòng'
-    },
-    {
         path: '../assets/images/accessory/a7.png',
         title: 'Thiết bị mạng'
     },
@@ -32,20 +28,12 @@ const accessories = [
         title: 'Gaming Gear'
     },
     {
-        path: '../assets/images/accessory/a9.png',
-        title: 'Gimbal | Tay cầm chống rung'
-    },
-    {
         path: '../assets/images/accessory/a10.png',
         title: 'Thẻ nhớ, USB'
     },
     {
         path: '../assets/images/accessory/a11.png',
         title: 'Chuột, bàn phím'
-    },
-    {
-        path: '../assets/images/accessory/a12.png',
-        title: 'Sim 4G số đẹp'
     },
     {
         path: '../assets/images/accessory/a13.png',
@@ -64,16 +52,8 @@ const accessories = [
         title: 'Quạt mini'
     },
     {
-        path: '../assets/images/accessory/a17.png',
-        title: 'Balo, túi chống sốc'
-    },
-    {
         path: '../assets/images/accessory/a18.png',
         title: 'Dây đeo đồng hồ'
-    },
-    {
-        path: '../assets/images/accessory/a19.png',
-        title: 'Ổ cứng di động'
     },
     {
         path: '../assets/images/accessory/a20.png',
@@ -84,7 +64,7 @@ const accessories = [
 const desktopComponents = [
     {
         path: '../assets/images/components/c1.png',
-        title: 'PC ráp sẵn CellphoneS',
+        title: 'PC ráp sẵn',
         background: 'white'
     },
     {
