@@ -1,3 +1,63 @@
 #slider{
-    height: 300px;
+    height: max-content;
+    margin: 0 auto;
+    width: 80%;
+    background: #fdfcfc;
+    border-radius: 10px;
+}
+
+.caroul-control{
+    position: relative !important;
+    width: 98.9%;
+    margin: 0 5px !important;
+    background-image: linear-gradient(0deg, red, rgb(245, 99, 99));
+    height: max-content;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.index-0{
+    z-index: 0 !important;
+}
+
+.accordion-button{
+    color: black !important;
+    font-size: 16px !important;
+}
+
+.accordion{
+    margin: -15px;
+}
+
+.caroul-control>div{
+    margin: 5px;
+}
+
+.img-ads-s1{
+    margin-bottom: 5px;
+    width: 100%;
+}
+.box-right-ads{
+    width: 100%;
+}
+.ads-item-1{
+    width: 100%;
+    vertical-align:text-top;
+    margin-top: 5px;
+}
+.ads-item-2{
+    border-radius: 10%;
+    border: 1px solid rgb(116, 114, 114);
+    padding: 5px;
+    margin-top: 2px;
+}
+.ads-item-2:hover{
+    border: 1px solid red;
+}
+.ads-title{
+    color: rgb(3, 3, 3);
+    position: relative;
+    font-weight: bold;
+    left: -2vw;
+    font-size: 13px;
 }

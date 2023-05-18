@@ -1,113 +1,41 @@
-
-@media (min-width: 768px) and (max-width: 991px)
-{
-    #header{
+@media (width < 768px) {
+    #header {
         height: 110px;
     }
-    div.mobile-menu:hover .drop-list-item{
-        top: 120%;
-        right: -70px;
-    }
-    .product-bar, .nav-customer{
+    .product-bar,
+    .nav-customer {
         visibility: hidden;
     }
-    .nav-mobile{
-        visibility: visible;
+
+    .mobile-menu {
+        display: block;
     }
-    .nav-mobile > div i{
+
+    .mobile-menu i {
         font-size: 32px;
-        color: white;
     }
-    .nav-mobile div{
+
+    .mobile-menu {
         margin-right: 70px;
     }
-    .icon-search{
-        top: 8px;
-        outline-offset: 9px;
-        outline-width: 7px;
+
+    .nav-search {
+        width: 170%;
+        position: relative;
+        margin-left: -30px;
+        margin-top: 50px;
     }
-     .in, .circle-left, .circle-right{
-         height: 75%;
-         margin-top: 30px;
-     }
-     .circle-left{
-         margin-left: 37%;
-         width: 50px;
-     }
-     .circle-right{
-         margin-left: -45%;
-     }
-     .logo-header{
-         position: absolute;
-         margin: 20px;
-         height: 77px;
-         width: 140px;
-     }
-}
-@media (min-width: 540px) and (max-width: 767px)
-{
-    #header{
-        height: 110px;
-    }
-    .product-bar, .nav-customer{
-       visibility: hidden;
-    }
-    .icon-search{
-        top: 4.5px;
-    }
-    .nav-mobile{
-        visibility: visible;
-        color: white;
-    }
-    .in, .circle-left, .circle-right{
-        height: 50%;
-        margin-top: 48px;
-    }
-    .circle-left{
-        margin-right: -50%;
-    }
-    .circle-right{
-        margin-left: -40%;
-    }
-    .logo-header{
+
+    .logo-header {
+        height: 50px;
+        width: 100px;
+        margin: 0px 50px;
         position: absolute;
-        height: 57px;
-        width: 120px;
-        margin: 2px 7px;
     }
-}
-@media (max-width: 539px)
-{
-    #header{
-        height: 110px;
+
+    .contact-mobile-header {
+        display: block;
+        margin: 0;
     }
-    .product-bar, .nav-customer{
-        visibility: hidden;
-     }
-     .icon-search{
-         top: 1px;
-     }
-     input.in:placeholder-shown{
-        font-size: 10px;
-     }
-     .nav-mobile{
-         visibility: visible;
-         color: white;
-     }
-     .in, .circle-left, .circle-right{
-         height: 50%;
-         margin-top: 38px;
-     }
-     .circle-left{
-         margin-left: 40%;
-     }
-     .circle-right{
-         margin-left: -60%;
-     }
-     .logo-header{
-         position: absolute;
-         height: 47px;
-         width: 100px;
-         margin: 1px 4px;
-     }
+    
 }
