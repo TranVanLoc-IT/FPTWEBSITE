@@ -4,16 +4,23 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 #wrapers {
-    width: 400px;
+    min-width: 400px;
+    height: 430px;
     background-color: rgb(255,255,255,0.2);
     padding: 40px 20px;
     border-radius: 6px;
     box-shadow: 0 0 30px rgb(0,0,0,0.5);
-    position: absolute;
-}
-[id*='s']{
-    margin: 40px 30vw;
+    backdrop-filter: blur(20px);
+    position: relative;
+    overflow: hidden;
 }
 .icon-close{
     position: absolute;
@@ -50,7 +57,7 @@
     transform: translateY(-50%);
     color : #162938;
     font-weight: 500;
-    font-size: 1.5rem;
+    font-size: 1em;
     transition: .5s;
 }
 .input-box input:focus~label,
@@ -64,14 +71,14 @@
      outline: none;
      width: 100%;
      height: 100%;
-     font-size: 2rem;
+     font-size: 1.1em;
      font-weight: 500;
 }
 
 .input-box .icon {
     position: absolute;
     right: 8px;
-    font-size: 2rem;
+    font-size: 1.3em;
     color : #162938;
     line-height: 57px;
     font-weight: 500;
@@ -79,12 +86,35 @@
 .container {
     margin: 10px 0px;
     font-weight: 500;
-    font-size: 1.5rem;
+    font-size: 1em;
     height: 20px;
 }
 
 #wrapers .container a {
     float: right;
+}
+ a {
+    text-decoration: none;
+}
+.handle-button {
+    width: 100%;
+    height: 50px;
+    padding: 15px 0px;
+    background-color: #162938;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 1.1em;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin: 15px 0;
+    border: none;
+    transition: .5s;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgb(0,0,0,0.5);
+}
+.handle-button:hover {
+    background: #fff;
+    color: #162938;
 }
 #wrapers .note-register {
     margin: 15px 0;
@@ -98,7 +128,7 @@
     border-radius: 6px;
     box-shadow: 0 0 30px rgb(0,0,0,0.5);
     backdrop-filter: blur(20px);
-    position: absolute;
+    position: relative;
     overflow: hidden;
 }
 #forgot-password{
@@ -108,14 +138,19 @@
     border-radius: 6px;
     box-shadow: 0 0 30px rgb(0,0,0,0.5);
     backdrop-filter: blur(20px);
-    position: absolute;
+    position: relative;
     overflow: hidden;
 }
 .font-bold {
-    font-size: 1.1rem;
+    font-size: 1.1em;
     font-weight: 500;
     color: #162938;
 }
+
+a:hover {
+    color: crimson;
+}
+
 .contact{
     box-shadow: 0 0 30px rgb(0,0,0,0.5);
     backdrop-filter: blur(20px);
@@ -193,7 +228,7 @@
     backdrop-filter: blur(20px);
     padding: 20px 20px;
 }
-.tab-itrem {
+.tab-item {
     min-width: 325px;
     padding: 16px 20px;
     font-size: 20px;
@@ -218,12 +253,12 @@
     background-color: #253f52;
     transition: all 0.2s ease;
 }
-.tab-itrem:hover {
+.tab-item:hover {
     opacity: 1;
     background-color: rgba(33, 109, 130, 0.7);
     border-color: rgba(194, 53, 100, 0.1);
 }
-.tab-itrem.active {
+.tab-item.active {
     opacity: 1;
 }
 .tab-pane {
