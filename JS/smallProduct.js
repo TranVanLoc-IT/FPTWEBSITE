@@ -20,6 +20,10 @@ const accessories = [
         title: 'Cáp, sạc'
     },
     {
+        path: '../assets/images/accessory/a6.png',
+        title: 'Pin dự phòng'
+    },
+    {
         path: '../assets/images/accessory/a7.png',
         title: 'Thiết bị mạng'
     },
@@ -116,7 +120,7 @@ const renderSmall = (products, root) => {
         return preVal + `
             <div class="small-product-item">
                 <a href="#" style="background-image: url(${curVal.path}); background-color: ${curVal.background}" class="small-product-link">
-                    <span>${curVal.title}</span>
+                <h5>${curVal.title}</h5>
                 </a>
             </div>
         `

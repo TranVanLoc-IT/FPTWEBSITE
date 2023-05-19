@@ -46,14 +46,11 @@
     margin-top: 5px;
 }
 .ads-item-2{
-    border-radius: 10%;
-    border: 1px solid rgb(116, 114, 114);
+    border-radius: 10px;
+    width: 70%;
     padding: 5px;
     margin-top: 2px;
-}
-.ads-item-2:hover{
-    border: 1px solid red;
-}
+}   
 .ads-title{
     color: rgb(3, 3, 3);
     position: relative;

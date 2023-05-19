@@ -7,7 +7,6 @@ const login = document.getElementById('wrapers');
 const forgotpassword = document.querySelectorAll('#forgot-password');
 
 const handle_button = document.querySelectorAll('.handle-button');
-const login_header = document.querySelector('.login-header');
 const icon_close = document.querySelectorAll('.icon-close');
 
 
@@ -34,18 +33,6 @@ rt_forgotpassword.onclick = function() {
     forgotpassword[0].style.display = 'block';
     
 }
-//click login in header to open login form
-login_header.onclick = function() {
-    register.style.display = 'none';
-    login.style.display = 'block'
-    forgotpassword.forEach(function(crr,index) {
-        forgotpassword[index].style.display = 'none';
-    })
-    contact.style.display = 'none';
-    ifcompany.style.display = 'none';
-}
-
-
 
 // Close with icon
 icon_close.forEach (function(crr,index) {
@@ -60,7 +47,7 @@ icon_close.forEach (function(crr,index) {
 })
 
 // open contact
-const contact = document.querySelector('#contact');
+const contact = document.getElementById('contact');
 const contact_header = document.querySelector('.contact-header');
 contact_header.onclick = function() {
     contact.style.display = 'block';
@@ -74,7 +61,8 @@ contact_header.onclick = function() {
 
 // open information company 
 const ifcompany_header = document.querySelector('.Inforcompany-header');
-const ifcompany = document.querySelector('#information-company');
+const ifcompany = document.getElementById('information-company');
+alert(ifcompany_header.textContent);
 ifcompany_header.onclick = function() {
     ifcompany.style.display = 'block';
     contact.style.display = 'none';

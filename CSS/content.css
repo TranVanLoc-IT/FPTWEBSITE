@@ -246,14 +246,14 @@
 .small-product-list {
     display: flex;
     list-style: none;
-    justify-content: justify;
+    gap: 1px;
     flex-wrap: wrap;
-    gap: 10px;
     margin-top: 16px;
 }
 
 .small-product-item {
     width: calc(20% - 10px);
+    margin-top: 5px;
 }
 
 .small-product-link {
@@ -275,7 +275,7 @@
     box-shadow: -2px 2px 3px 3px gray;
 }
 
-.small-product-link span {
+.small-product-link h5 {
     display: block;
     font-size: 1.5vh;
     color: black;
