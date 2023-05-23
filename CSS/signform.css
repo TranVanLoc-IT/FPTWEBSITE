@@ -54,7 +54,7 @@
     transform: translateY(-50%);
     color : #162938;
     font-weight: 500;
-    font-size: 1.5rem;
+    font-size: 1em;
     transition: .5s;
 }
 .input-box input:focus~label,
@@ -68,14 +68,14 @@
      outline: none;
      width: 100%;
      height: 100%;
-     font-size: 2rem;
+     font-size: 1.1em;
      font-weight: 500;
 }
 
 .input-box .icon {
     position: absolute;
     right: 8px;
-    font-size: 2rem;
+    font-size: 1.3em;
     color : #162938;
     line-height: 57px;
     font-weight: 500;
@@ -83,7 +83,7 @@
 .container {
     margin: 10px 0px;
     font-weight: 500;
-    font-size: 1.5rem;
+    font-size: 1em;
     height: 20px;
 }
 
@@ -114,10 +114,15 @@
     position: absolute;
 }
 .font-bold {
-    font-size: 1.1rem;
+    font-size: 1.1em;
     font-weight: 500;
     color: #162938;
 }
+
+a:hover {
+    color: crimson;
+}
+
 .contact{
     box-shadow: 0 0 30px rgb(0,0,0,0.5);
     backdrop-filter: blur(20px);
