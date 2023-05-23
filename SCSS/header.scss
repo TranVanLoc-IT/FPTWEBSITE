@@ -25,6 +25,14 @@
 a{
     text-decoration: none !important;
 }
+select{
+    @include max-size(100%, 100%);
+    padding: 15px;
+    border: none;
+    option{
+        text-align: left;
+    }
+}
 input{
     text-align: left;
 }
@@ -66,6 +74,7 @@ li{
     h4{
         margin-top: 40px;
         font-size: 1.07vw;
+        cursor: pointer;
         font-weight: bold;
     }
 }
@@ -216,7 +225,6 @@ i{
     width: 60%;
     font-size: 14px;
     line-height: 16px;
-    color: white;
 }
 .mobile-menu div i .mount-of{
     @include spacing($t:0px, $l:28px);

@@ -58,11 +58,11 @@ window.onload = function(){
                 <div class="card">
                     <div class="row">
                         <div class="col-md-4 card-header">
-                            <img src="${item.img}" alt="" class="w-100">
+                            <img src="${item.img}" alt="" class="tabs-bonus">
                         </div>
                         <div class="col-md-8 card-body">
                             <a href=""><h3 class="card-title fs-5 bonus-name">${item.title}</h3></a>
-                            <p class="card-text text-left text-danger fs-4">${item.cost}<s class='sub-old-cost'>${item["old-cost"]}</s></p>
+                            <p class="card-text text-left text-danger fs-4">${item.cost}<s class='sub-old-cost'>&nbsp;${item["old-cost"]}</s></p>
                             <button type="button" title="Mua thêm" class="fhs "><span><a href="index.html">Mua
                             thêm</a></span></button>
                         </div>

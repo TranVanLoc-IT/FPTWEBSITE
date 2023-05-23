@@ -1,0 +1,35 @@
+th,td{
+     text-align: left !important;
+}
+.details-content{
+     height: 500px;
+     overflow-y: scroll; 
+}
+.details-content > p > img{
+     width: 100%;
+}
+.details-content p{
+     font-size: 2rem;
+}
+#feedback{
+     margin-left: 30px;
+}
+.pr-data{
+     margin-top: 50px !important;
+}
+.pr-cap{
+     margin-top: -10px !important;
+}
+.news-about-product div img{
+     width: 20%;
+     height: 90%;
+}
+.news-about-product div{
+     margin-top: 5px;
+}
+.small-avt-icon{
+     width: 70px;
+     height: 70px;
+     border-radius: 50%;
+     background-color: black;
+}

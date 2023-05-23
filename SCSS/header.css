@@ -4,9 +4,20 @@
   text-align: center;
   text-decoration: none;
 }
+
 /* css group*/
 a {
   text-decoration: none !important;
+}
+
+select {
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+  border: none;
+}
+select option {
+  text-align: left;
 }
 
 input {
@@ -63,6 +74,7 @@ li {
 .nav-bar h4 {
   margin-top: 40px;
   font-size: 1.07vw;
+  cursor: pointer;
   font-weight: bold;
 }
 
@@ -239,7 +251,6 @@ i {
   width: 60%;
   font-size: 14px;
   line-height: 16px;
-  color: white;
 }
 
 .mobile-menu div i .mount-of {

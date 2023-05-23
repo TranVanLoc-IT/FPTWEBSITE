@@ -3,10 +3,11 @@ const rt_register = document.querySelector('.rt-register');
 const rt_forgotpassword = document.querySelector('.rt-forgotpassword');
 
 const register = document.getElementById('register');
-const login = document.getElementById('wrapers');
+const login = document.getElementById('wraper');
 const forgotpassword = document.querySelectorAll('#forgot-password');
 
 const handle_button = document.querySelectorAll('.handle-button');
+const login_header = document.querySelector('.login-header');
 const icon_close = document.querySelectorAll('.icon-close');
 
 
@@ -16,10 +17,10 @@ const icon_close = document.querySelectorAll('.icon-close');
 rt_login.forEach((crr,index) => {
     rt_login[index].onclick = function() {
         forgotpassword[0].style.display = 'none';
+        forgotpassword[2].style.display = 'none';
         register.style.display = 'none';
         login.style.display = 'block'
         contact.style.display = 'none';
-        ifcompany.style.display = 'none';
     }
 })
 // click register to open register form
@@ -33,6 +34,18 @@ rt_forgotpassword.onclick = function() {
     forgotpassword[0].style.display = 'block';
     
 }
+//click login in header to open login form
+function loginF() {
+    register.style.display = 'none';
+    login.style.display = 'block'
+    forgotpassword.forEach(function(crr,index) {
+        forgotpassword[index].style.display = 'none';
+    })
+    contact.style.display = 'none';
+    return false;
+}
+
+
 
 // Close with icon
 icon_close.forEach (function(crr,index) {
@@ -47,53 +60,17 @@ icon_close.forEach (function(crr,index) {
 })
 
 // open contact
-const contact = document.getElementById('contact');
+const contact = document.querySelector('#contact');
 const contact_header = document.querySelector('.contact-header');
-contact_header.onclick = function() {
+function contactF() {
     contact.style.display = 'block';
-    ifcompany.style.display = 'none';
     register.style.display = 'none';
     login.style.display = 'none';
     forgotpassword.forEach(function(crr,index) {
         forgotpassword[index].style.display = 'none';
     })
+    return false;
 }
-
-// open information company 
-const ifcompany_header = document.querySelector('.Inforcompany-header');
-const ifcompany = document.getElementById('information-company');
-alert(ifcompany_header.textContent);
-ifcompany_header.onclick = function() {
-    ifcompany.style.display = 'block';
-    contact.style.display = 'none';
-    register.style.display = 'none';
-    login.style.display = 'none';
-    forgotpassword.forEach(function(crr,index) {
-        forgotpassword[index].style.display = 'none';
-    })
-}
-//di chuyen giua cac muc trong information company
-const tabitems = document.querySelectorAll(".tab-item");
-const tabpanes = document.querySelectorAll(".tab-pane");
-const line = document.querySelector(".line");
-tabitems.forEach((item, index) => {
-    item.onclick = function(){
-        // handle item
-        const itemRemove = document.querySelector(".tab-item.active");
-        itemRemove.classList.remove('active');
-        this.classList.add('active');
-
-        // handle pane
-        const paneRemove = document.querySelector(".tab-pane.active");
-        paneRemove.classList.remove('active');
-        tabpanes[index].classList.add('active');
-
-        // handle line
-        line.style.left = this.offsetLeft + 'px'
-        line.style.width = this.offsetWidth + 'px'
-    }
-});
-
 // lay thong tin email user 
 const email_user = document.querySelector('.email-user');
 const title_usser = document.querySelector('.wellcome-user');
@@ -105,35 +82,48 @@ const count_down = document.querySelector('.countdow-OTP');
 handle_button.forEach ((crr,index) => {
 
     // xu ly nut tiep tuc trong quen mat khau thu 1
-    handle_button[2].onclick = () => {
+    handle_button[2].onclick = (e) => {
+        e.preventDefault();
         KiemTraQMK();
     }
     // xu ly dang nhap 
-    handle_button[0].onclick = () =>{
-        KiemTraDL_login();
+    handle_button[0].onclick = (e) =>{
+        e.preventDefault();
+        if(KiemTraDL_login() == true){
+           mainPage.click();
+        }
     }
 
     // xu ly dang ky
-    handle_button[1].onclick = () =>{
+    handle_button[1].onclick = (e) =>{
+        e.preventDefault();
         KiemTraDL_resgister();
     }
     // xu ly nut tiep tuc trong quen mat khau thu 2
-    handle_button[3].onclick = () => {
+    handle_button[3].onclick = (e) => {
+        e.preventDefault();
         var otp = document.getElementById("OTP").value.trim();
         if(otp == "12345"){
             forgotpassword[1].style.display = 'none';
             forgotpassword[2].style.display = 'block';
         }
+        else
+        {
+           document.querySelector(".errOTP").textContent = "Sai OTP";
+        }
     }
      // xu ly nut tiep tuc trong quen mat khau thu 3
-    handle_button[4].onclick = () => {
-        KiemTraQMK3();
+    handle_button[4].onclick = (e) => {
+        e.preventDefault();
+        if(KiemTraQMK3())
+        {
+            rt_login[0].click();
+        }
     }
 })
-
 // Array User
-var gmailArray = ["phamnguyenvu287@gmail.com"];
-var passArray = ["vu123456789"];
+var gmailArray = ["phamnguyenvu287@gmail.com","tvloc@gmail.com"];
+var passArray = ["vu123456789","loc7777777"];
 
 function KiemTraDL_login(){
     var flag = true;
@@ -150,17 +140,24 @@ function KiemTraDL_login(){
     }
     // Xac nhan dung thong tin vao trang chu
     if(flag == true){
-        for (var i = 0; i < gmailArray.length; i++){
+        for (let i = 0; i < gmailArray.length; i++){
             if (Emaillogin == gmailArray[i]){
                 if(Passlogin == passArray[i]){
-                    alert("Dang nhap thanh cong");
                     // Vao trang chu
-
-
+                    window.sessionStorage.setItem("paIn",passArray);
+                    sessionStorage.setItem("userCurrent",Passlogin);
+                    window.localStorage.setItem(Passlogin,Emaillogin);
+                    return flag;
                 }
+            }
+            if(i+1 == gmailArray.length)
+            {
+                alert("Bạn chưa có tài khoản, đăng ký ngay!");
+                flag = false;
             }
         }
     }
+    return flag;    
 }
 
 function  KiemTraDL_resgister(){
@@ -187,7 +184,7 @@ function  KiemTraDL_resgister(){
 
         } alert ("Mat khau trong hoac ky tu nho hon 10");
     }
-    for(var i = 0; i < gmailArray.length; i++){
+    for(let i = 0; i < gmailArray.length; i++){
         if (Emaireg == gmailArray[i]){
             flag = false;
             alert("Tai khoan email da ton tai!");
@@ -202,7 +199,8 @@ function  KiemTraDL_resgister(){
     if (flag == true){
             alert("Dang Ky Thanh Cong");
             gmailArray.push(Emaireg);
-            passArray.push(Passreg);       
+            passArray.push(Passreg);
+            loginF();
         }
     // console.log(gmailArray);
     // console.log(passArray);
@@ -245,13 +243,13 @@ function KiemTraQMK3(){
             alert ("Mat khau trong hoac ky tu nho hon 10");
         }
     }
-    if (flag == true){
-        for (var i = 0; i < gmailArray.length; i++){
-            if (email_user == gmailArray[i]){
-                passArray[i] == Passqmk;
+    if (flag == true){  
+        for (let i = 0; i < gmailArray.length; i++){
+            if (email_user.value == gmailArray[i]){
+                passArray[i] = Passqmk;
+                alert("Dang nhap thanh cong");
             }
         }
-        alert("Dang nhap thanh cong");
-        // Vao Trang chu
     }
+    return flag;
 }

@@ -12,6 +12,7 @@
     <!-- css file link-->
     <link rel="stylesheet" href="../SCSS/header.css" type="text/css">
     <link rel="stylesheet" href="../CSS/footer.css" type="text/css">
+    <link rel="stylesheet" href="../CSS/slider.css" type="text/css">
     <link rel="stylesheet" href="../CSS/responsive.css" type="text/css">
     <link rel="stylesheet" href="../CSS/grid.css" type="text/css">
     <link rel="stylesheet" href="../CSS/responsive_grid.css" type="text/css">
@@ -39,78 +40,174 @@
                             <i class="ti-close float-sm-end m-2 fs-3 close-list-icon"></i>
                             <div class="clearfix"></div>
                         </li>
-                        <li><i class="fa fa-user-circle fa-2x ic-mobile-list"></i>
-                            <h3 style="padding-left: 35px;padding-top: 23px;">Tài khoản của tôi</h3>
+                        <li>
+                            <div class="accordion" id="accordionParent">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingZero">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseZero" aria-expanded="true"
+                                            aria-controls="collapseZero">
+                                            Thông tin hot
+                                        </button>
+                                    </h2>
+                                    <div id="collapseZero" class="accordion-collapse collapse"
+                                        aria-labelledby="headingZero" data-bs-parent="#accordionParent">
+                                        <div class="accordion-body">
+                                            <ul class="list-unstyled">
+                                                <li><a href="#">Tin mới</a></li>
+                                                <li><a href="#">Khuyến mãi</a></li>
+                                                <li><a href="#">Điện máy - Gia dụng</a></li>
+                                                <li><a href="#">Thủ thuật</a></li>
+                                                <li><a href="#">For gamers</a></li>
+                                                <li><a href="#">App & games</a></li>
+                                                <li><a href="#">Sự kiện</a></li>
+                                                <li><a href="#">Video hot</a></li>
+                                                <li><a href="#">Sinh viên</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseParent" aria-expanded="true"
+                                            aria-controls="collapseParent">
+                                            Tài khoản của tôi
+                                        </button>
+                                    </h2>
+                                    <div id="collapseParent" class="accordion-collapse collapse"
+                                        aria-labelledby="headingOne" data-bs-parent="#accordionParent">
+                                        <div class="accordion-body">
+                                            <ul class="list-unstyled">
+                                                <li><a href="#">Cài đặt thông tin</a></li>
+                                                <li><a href="../HTML/formSignLog.html">Đăng xuất</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- second accordion -->
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingTwo">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseTwo" aria-expanded="true"
+                                            aria-controls="collapseTwo">
+                                            Bộ lọc
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse"
+                                        aria-labelledby="headingTwo" data-bs-parent="#accordionParent">
+                                        <div class="accordion-body">
+                                            <div class="accordion" id="accordionFilter">
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header" id="headingOne">
+                                                        <button class="accordion-button" type="button"
+                                                            data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                                            aria-expanded="true" aria-controls="collapseOne">
+                                                            Theo giá
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseOne" class="accordion-collapse collapse"
+                                                        aria-labelledby="headingOne" data-bs-parent="#accordionFilter">
+                                                        <div class="accordion-body">
+                                                            <input type="checkbox" name="follow-cost" value="c1">Tăng
+                                                            dần<br>
+                                                            <input type="checkbox" name="follow-cost" value="c2">Giảm
+                                                            dần<br>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header" id="headingTwo">
+                                                        <button class="accordion-button collapsed" type="button"
+                                                            data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                                            aria-expanded="false" aria-controls="collapseTwo">
+                                                            Theo hãng
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseTwo" class="accordion-collapse collapse"
+                                                        aria-labelledby="headingTwo" data-bs-parent="#accordionFilter">
+                                                        <div class="accordion-body">
+                                                            <select name="" id="">
+                                                                <option value="h1">Apple</option>
+                                                                <option value="h">Samsung</option>
+                                                                <option value="h3">Xiaomi</option>
+                                                                <option value="h4">Asus</option>
+                                                                <option value="h5">OPPO</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header" id="headingThree">
+                                                        <button class="accordion-button collapsed" type="button"
+                                                            data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                                            aria-expanded="false" aria-controls="collapseThree">
+                                                            Theo tỉnh thành
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseThree" class="accordion-collapse collapse"
+                                                        aria-labelledby="headingThree"
+                                                        data-bs-parent="#accordionFilter">
+                                                        <div class="accordion-body">
+                                                            <select name="" id="">
+                                                                <option value="t1">Hà Nội</option>
+                                                                <option value="t2">TP.HCM</option>
+                                                                <option value="t3">Đà Nẵng</option>
+                                                                <option value="t4">Cần Thơ</option>
+                                                                <option value="t5">Hải phòng</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingFour">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseFour" aria-expanded="true"
+                                            aria-controls="collapseFour">
+                                            Sản phẩm
+                                        </button>
+                                    </h2>
+                                    <div id="collapseFour" class="accordion-collapse collapse"
+                                        aria-labelledby="headingFour" data-bs-parent="#accordionParent">
+                                        <div class="accordion-body">
+                                            <ul class="list-unstyled">
+                                                <li><a href="#">Điện thoại</a></li>
+                                                <li><a href="#">Laptop</a></li>
+                                                <li><a href="#">PC - Phụ kiện</a></li>
+                                                <li><a href="#">Sim & thẻ</a></li>
+                                                <li><a href="#">Internet</a></li>
+                                                <li><a href="#">Apple</a></li>
+                                                <li><a href="#">Phụ kiện</a></li>
+                                                <li><a href="#">Máy cũ giá rẻ</a></li>
+                                                <li><a href="#">Đồ gia dụng</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingFive">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseFive" aria-expanded="true"
+                                            aria-controls="collapseFive">
+                                            Thanh toán
+                                        </button>
+                                    </h2>
+                                    <div id="collapseFive" class="accordion-collapse collapse"
+                                        aria-labelledby="headingFive" data-bs-parent="#accordionParent">
+                                        <div class="accordion-body">
+                                            <ul class="list-unstyled">
+                                                <li><a href="#">Cài đặt thanh toán</a></li>
+                                                <li><a href="#">Ví tiền</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </li>
-                        <li>Thông tin hot</li>
-                        <li class="mobile-dropdown-js row">
-                            Bộ lọc
-                            <i class="ti-angle-double-down" style="margin: 2px 1px; font-size: 12px;"></i>
-                            <ul class="sublist-mobile-js list-unstyled">
-                                <li class="dropend">
-                                    <button data-bs-toggle="dropdown"
-                                        class="ml-2 btn fs-2 container-fluid dropdown-toggle">Theo giá
-                                        &nbsp;&nbsp;</button>
-                                    <ul class='dropdown-menu'>
-                                        <li class="dropdown-item">
-                                            <input type="radio" name="follow-cost" value="c1">Tăng dần<br>
-                                        </li>
-                                        <li class="dropdown-item">
-                                            <input type="radio" name="follow-cost" value="c2">Giảm dần<br>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="dropend">
-                                    <button data-bs-toggle="dropdown"
-                                        class="ml-2 btn fs-2 container-fluid dropdown-toggle">Theo vùng</button>
-                                    <ul class="dropdown-menu">
-                                        <li class="dropdown-item">
-                                            <input type="radio" name="follow-city" value="c1">Hà Nội<br>
-                                        </li>
-                                        <li class="dropdown-item">
-                                            <input type="radio" name="follow-city" value="c2">TP.HCM<br>
-
-                                        </li>
-                                        <li class="dropdown-item">
-                                            <input type="radio" name="follow-city" value="c3">Đà Nẵng<br>
-
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="dropend">
-                                    <button data-bs-toggle="dropdown"
-                                        class="ml-2 btn fs-2 container-fluid dropdown-toggle">Theo hãng</button>
-                                    <ul class="dropdown-menu">
-                                        <li class="dropdown-item pb-2">
-                                            <input type="radio" name="follow-made" value="c1">Samsung<br>
-                                        </li>
-                                        <li class="dropdown-item">
-                                            <input type="radio" name="follow-made" value="c2">Xiaomi<br>
-
-                                        </li>
-                                        <li class="dropdown-item">
-                                            <input type="radio" name="follow-made" value="c3">Apple<br>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="mobile-dropdown-js">Sản phẩm
-                            <i class="ti-angle-down" style="margin: 2px 1px;font-size: 12px;"></i>
-                            <ul class="sublist-mobile-js list-unstyled">
-                                <li><a href="">Điện thoại</a></li>
-                                <li><a href="">Laptop</a></li>
-                                <li><a href="">PC - Phụ kiện</a></li>
-                                <li><a href="">Sim & thẻ</a></li>
-                                <li><a href="">Internet</a></li>
-                                <li><a href="">Apple</a></li>
-                                <li><a href="">Phụ kiện</a></li>
-                                <li><a href="">Máy cũ giá rẻ</a></li>
-                                <li><a href="">Đồ gia dụng</a></li>
-                            </ul>
-                        </li>
-                        <li>Thanh toán</li>
-                        <li>Tài khoản</li>
                     </ul>
                 </div>
                 <img class="logo-header" src="../Assets/images/logo/fpt-logo-header.png" alt="Logo">
@@ -126,13 +223,17 @@
                 <!-- contact-mobile -->
                 <div class="contact-mobile-header">
                     <div class="contact-mobile">
-                        Gọi miễn phí <br>
-                        <span class="fw-bold">1800 6601</span>
+                        <a href="tel: 1800 6601" class="text-white">
+                            Gọi miễn phí <br>
+                            <span class="fw-bold">1800 6601</span>
+                        </a>
                     </div>
                     <div class="shopping-cart-mobile">
-                        <i class="ti-shopping-cart">
-                            <p class="product-mount"><script>document.write(sessionStorage.getItem('pr-mount'))</script> </p>
-                        </i>
+                        <a href="../HTML/cart-form.html" class="text-white">
+                            <i class="ti-shopping-cart">
+                                <p class="product-mount"><script>document.write(sessionStorage.getItem('pr-mount'))</script> </p>
+                            </i>
+                        </a>
                     </div>
                     <div class="clearfix"></div>
                 </div>
@@ -175,7 +276,7 @@
                         <ul class="drop-list-item list-unstyled">
                             <li><a href=""><i class="ti-settings"
                                         style="font-size: 18px;top: 5;"></i>&nbsp;&nbsp;&nbsp;Cài đặt thông tin</li></a>
-                            <li><a href=""><i class="fa fa-sign-out"
+                            <li><a href="../HTML/formSignLog.html"><i class="fa fa-sign-out"
                                         style="font-size: 18px;top:52;"></i>&nbsp;&nbsp;&nbsp;Đăng xuất</li></a>
                         </ul>
                     </div>
@@ -452,7 +553,7 @@
             </div>
         </div>
         <!-- shopping pay form -->
-        <div id="cart-shopping-pay">
+        <div id="cart-shopping-pay row">
             <nav style="--bs-breadcrumb-divider: '>';">
                 <ol class="breadcrumb fs-4 m-5 bg-white ">
                     <li class="breadcrumb-item">
@@ -461,45 +562,46 @@
                     <li class="breadcrumb-item" aria-current="page">Giỏ hàng</li>
                 </ol>
             </nav>
-            <div class="cart-form mx-5">
+            <div class="col-md-9 col-sm-12">
                 <h2 class="text-dark text-left p-5 border-bottom">BẠN CÓ <script>document.write(sessionStorage.getItem('pr-mount'))</script> SẢN PHẨM TRONG GIỎ HÀNG
                 </h2>
                 <div class="row">
-                    <div class="col-sm-7 p-3 text-dark fs-3">
+                    <div class="col-md-7 col-sm-12 col-12 p-3 text-dark fs-2 font-weight-bold">
                         Sản phẩm
                         <div class="row">
-                            <div class="col-sm-4">
+                            <div class="col-md-4 col-sm-4 col-4 text-left">
                                 <a href="">
-                                    <img style="float:right;" src="../Assets/images/header/SS-A34-best-Selling.jpg"
+                                    <img src="../Assets/images/header/SS-A34-best-Selling.jpg"
                                         alt=""></a>
                             </div>
-                            <div class="col-sm-8 text-left">
+                            <div class="col-md-8 col-sm-8 col-8 text-left">
                                 <a href="" class="fs-4 text-danger">Samsung Galaxy A34 5G
                                     128GB</a>
-                                <p class="fs-5 text-justify text-dark">Well, the answer is actually no - fancy symbols.
-                                    The
-                                    explanation starts with unicode; an industry standard which creates the
-                                    specification for thousands of different symbols and characters. All the characters
-                                    that you see
-                                    </p>
+                                <ul class="fs-5 text-justify text-dark fs-4">
+                                    <li><i class="fa fa-mobile"></i>&nbsp;Chính: 6.6 inch, Super AMOLED, FHD+, 1080 x 2400 Pixels</li>
+                                    <li><i class="fa fa-camera"></i>&nbsp;48.0 MP + 8.0 MP + 5.0 MP</li>
+                                    <li><i class="fa fa-camera-retro"></i>&nbsp;MediaTek Dimensity 1080</li>
+                                    <li><i class="fa fa-microchip"></i>&nbsp;128 GB</li>
+                                    <li><i class="fa fa-hdd-o"></i>&nbsp;Chính: 6.6 inch, Super AMOLED, FHD+, 1080 x 2400 Pixels</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-2 p-3 text-dark fs-3">
+                    <div class="col-md-2 col-sm-6 col-6 p-3 text-dark fs-2 font-weight-bold">
                         Số lượng
                         <div class="row mt-5">
-                            <div class="col-sm-4">
+                            <div class="col-md-4 col-sm-4 col-4">
                                 <button onclick="btnClickProductMount(this)" name="desc"  class="btn btn-info w-100 fs-5">-</button>
                             </div>
-                            <div class="col-sm-4">
+                            <div class="col-md-4 col-sm-4 col-4">
                                 <span class="form-control text-center fs-5 h-100 spn-mount">1</span>
                             </div>
-                            <div class="col-sm-4">
+                            <div class="col-md-4 col-sm-4 col-4">
                                 <button onclick="btnClickProductMount(this)" name="asc" class="btn btn-info w-100 fs-5">+</button>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-3 p-3 text-dark fs-3">Đơn giá
+                    <div class="col-md-3 col-sm-6 col-6 p-3 text-dark fs-2 font-weight-bold">Đơn giá
                         <p class="mt-5 text-danger cost-state">17.930.000<u class="text-decoration-underline">đ</u>
                         </p>
                     </div>
@@ -514,7 +616,7 @@
                     </div>
                     <div class="col-md-7 col-sm-12 text-left">
                         <div class="method-recieve text-left fs-3">
-                            <div class="fs-2 text-danger mt-2">Chọn phương thức nhập hàng</div>
+                            <div class="fs-2 text-danger mt-2">Chọn phương thức nhận hàng</div>
                             <input type="radio" onclick="displayShipForm(this)" name="choice-method" id="in-at-shop" value="0">
                             <label for="in-at-shop">Tại shop</label>
                             <input type="radio" onclick="displayShipForm(this)" name="choice-method" id="in-shipping" value="1">
@@ -551,14 +653,13 @@
                 <div class="row">
                     <div class="col-md">
                         <p class="text-center text-danger fs-2">KHUYẾN MÃI</p>
-                        <ul id="bonus-render-item" class="row p-2">
+                        <ul id="bonus-render-item" class="list-unstyled row p-2">
                             
                         </ul>
                     </div>
-                    
                 </div>
         </div>
-        <div class="right-form">
+        <div class="col-md-3 col-sm-12">
             <div class="toMoney text-center pt-5 p-2">
                 <table class="table table-hover table-primary">
                     <thead>

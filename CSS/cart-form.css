@@ -9,7 +9,7 @@
     cursor: pointer;
 }
 #cart-shopping-pay {
-    position: relative;
+    position: absolute;
 }
 
 .cart-form {
@@ -127,4 +127,8 @@ span.errReForm{
     font-family: sans-serif;
     padding: 10px 20px;
     margin-left: 15px;
+}
+.tabs-bonus{
+    width: 100%;
+    height: 100%;
 }

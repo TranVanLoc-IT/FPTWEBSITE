@@ -50,5 +50,18 @@
         width: calc(27.7% - 10px);
         margin-top: 5px;
     }
-    
+    .mobile-info{
+        display: block;
+    }
+    .navigation{
+        display: none;
+    }
+    .contact{
+        width: 90%;
+        height: 450px;
+    }
+    .tabs-bonus{
+        width: 50% !important;
+        height: 75% !important;
+    }
 }

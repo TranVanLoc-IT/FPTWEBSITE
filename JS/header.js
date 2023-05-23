@@ -1,7 +1,17 @@
 
 
 // nav-mobile-js
-
+function welcome(){
+    console.log(sessionStorage.getItem('paIn'));
+    let res =  sessionStorage.getItem("paIn").split(',');
+    res.forEach(function(item2,index){
+        if(item2 == sessionStorage.getItem("userCurrent")){
+               confirm(`Chào mừng ${window.localStorage.getItem(item2)}`);
+         }
+    })
+    sessionStorage.clear();
+    }
+window.addEventListener('load', welcome());
 var _mobileDropdown = document.querySelectorAll('.mobile-dropdown-js');
 var _sublistMobile = document.querySelectorAll('.sublist-mobile-js');
 for(let i = 0; i < _mobileDropdown.length; i++)
