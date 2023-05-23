@@ -12,6 +12,7 @@
     <!-- css file link-->
     <link rel="stylesheet" href="../SCSS/header.css" type="text/css">
     <link rel="stylesheet" href="../CSS/footer.css" type="text/css">
+    <link rel="stylesheet" href="../CSS/slider.css" type="text/css">
     <link rel="stylesheet" href="../CSS/detailsProduct.css" type="text/css">
     <link rel="stylesheet" href="../CSS/responsive.css" type="text/css">
     <link rel="stylesheet" href="../CSS/grid.css" type="text/css">
@@ -232,7 +233,9 @@
                         <a href="../HTML/cart-form.html" class="text-white">
                             <i class="ti-shopping-cart">
                                 <p class="product-mount">
-                                    <script>document.write(sessionStorage.getItem('pr-mount'))</script>
+                                    <script>
+                                        document.write(sessionStorage.getItem('pr-mount'))
+                                    </script>
                                 </p>
                             </i>
                         </a>
@@ -268,8 +271,8 @@
                             </i>
                         </a>
                         <ul class="drop-list-item list-unstyled">
-                            <li><a href="">Đã mua</a></li>
-                            <li><a href="">Hàng chờ</a></li>
+                            <li><a href="#">Đã mua</a></li>
+                            <li><a href="../HTML/cart-form.html">Hàng chờ</a></li>
                         </ul>
                         <h4>Giỏ hàng</h4>
                     </div>
@@ -278,10 +281,10 @@
                         <i class="ti-user"></i>
                         <h4>Tài khoản</h4>
                         <ul class="drop-list-item list-unstyled">
-                            <li><a href=""><i class="ti-settings"
-                                        style="font-size: 18px;top: 5;"></i>&nbsp;&nbsp;&nbsp;Cài đặt thông tin</li></a>
-                            <li><a href="../HTML/formSignLog.html"><i class="fa fa-sign-out"
-                                        style="font-size: 18px;top:52;"></i>&nbsp;&nbsp;&nbsp;Đăng xuất</li></a>
+                            <li><a href="#"><i class="ti-settings"
+                                        style="font-size: 18px;margin-top: 0px;"></i>&nbsp;&nbsp;&nbsp;Cài đặt thông tin</a></li>
+                            <li><a href="../HTML/formSignLog.html"><i class="fa fa-sign-in"
+                                        style="font-size: 18px;margin-top: 0px;"></i>&nbsp;&nbsp;&nbsp;Đăng nhập</a></li>
                         </ul>
                     </div>
                 </div>
@@ -462,11 +465,11 @@
                                 <div class="top-selling">
                                     <h4 class="text-left">Bán chạy nhất</h4>
                                     <div class="img-top-sell">
-                                        <a href=""><img src="../Assets/images/header/iphone14-pro-best-selling.jpg"
+                                        <a href="../HTML/detailsProduct.html" onclick="sessionData()"><img src="../Assets/images/header/iphone14-pro-best-selling.jpg"
                                                 alt=""></a>
                                     </div>
                                     <div class="descript-top-sell">
-                                        <a href="">iPhone 14 Pro Max
+                                        <a href="../HTML/detailsProduct.html" onclick="sessionData()">iPhone 14 Pro Max
                                             128GB</a>
                                         <p>27.190.000 <span style="text-decoration: underline;">đ</span></p>
                                     </div>
@@ -576,8 +579,8 @@
                     <i class="fa fa-star text-warning fs-1"></i>
                     <i class="fa fa-star text-warning fs-1"></i>
 
-                    <div class="d-inline-flex justify-content-between w-75">
-                        <a href="#feedback">100 đánh giá</a>|
+                    <div class="d-inline-flex header-fb w-75">
+                        <a href="#feedback">100 đánh giá</a>&nbsp;|
                         <a href="">59 hồi đáp</a>
                         <a href=""><i class="fa fa-plus-circle"></i>&nbsp;So sánh</a>
                     </div>
@@ -932,18 +935,18 @@
                     </div>
                     <div class="col-md-6 col-sm-12 col-12">
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-md-6 col-sm-6 col-6  mx-3">
                                 <h2 class="text-danger font-weight-bold fs-1 text-left">34.990.000 <span
                                         class="text-decoration-underline">đ</span>&nbsp;&nbsp;<span
                                         class="text-muted text-decoration-line-through fs-5">2.990.000đ</span></h2>
-                                <h4 class="text-danger"> <i class="fa fa-bookmark text-warning"></i>+1000 điểm thưởng dự
+                                <h4 class="text-danger text-left"> <i class="fa fa-bookmark text-warning"></i>+1000 điểm thưởng dự
                                     kiến</h4>
                             </div>
-                            <div class="col-md-4 ms-auto fs-3">
+                            <div class="col-md-4 col-sm-4 col-4 ms-auto fs-3">
                                 <p>Trả góp chỉ từ 1.000.000đ/ tháng</p>
                             </div>
                         </div>
-                        <div class="w-75">
+                        <div class="w-75 mx-3">
                             <table border="1" class="table table-hover table-primary">
                                 <tr>
                                     <th>Nhận ngay khuyến mãi đặc biệt</th>
@@ -964,12 +967,12 @@
                             </table>
                         </div>
                         <div class="row">
-                            <div class="col-md-12">
-                                <div class="col-md-2">
+                            <div class="row">
+                                <div class="col-md-2 col-sm-2 col-2">
                                     <img src="../Assets/images/detailsProduct/EVO.jpg  " class="w-75 h-75" alt="">
                                     <input type="checkbox">
                                 </div>
-                                <div class="col-md-10">
+                                <div class="col-md-10 col-sm-10 col-10">
                                     <div class="card border-0">
                                         <h3 class="card-title">EVO</h3>
                                         <p class="card-text text-left fs-3">
@@ -979,12 +982,12 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-12">
-                                <div class="col-md-2">
+                            <div class="row my-3">
+                                <div class="col-md-2 col-sm-2 col-2">
                                     <img src="../Assets/images/detailsProduct/krerivo.png" class="w-75 h-75" alt="">
                                     <input type="checkbox">
                                 </div>
-                                <div class="col-md-10">
+                                <div class="col-md-10 col-sm-10 col-10">
                                     <div class="card border-0">
                                         <h3 class="card-title">
                                             Thanh toán Kredivo</h3>
@@ -997,14 +1000,14 @@
                                 </div>
                             </div>
                         </div>
-                        <button class="btn btn-danger dtn-block w-100">
+                        <button class="btn btn-danger dtn-block w-100" onclick="addProduct()">
                             <h2>MUA NGAY</h2>Giao hàng miễn phí hoặc nhận tại shop<br>
                         </button>
                         <div class="row mx-3">
-                            <button class="col-md-5 col-sm-12 mt-3 col-12 btn btn-primary">
+                            <button class="col-md-5 col-sm-4 mt-3 col-4 btn btn-primary">
                                 <h3>TRẢ GÓP</h3>Duyệt nhanh qua điện thoại<br>
                             </button>
-                            <button class="col-md-5 ms-auto mt-3 col-sm-12 col-12 btn btn-primary">
+                            <button class="col-md-5 ms-auto mt-3 col-sm-4 col-4 btn btn-primary">
                                 <h3>TRẢ GÓP QUA THẺ</h3>Visa, Master card, JCB, AMEX<br>
                             </button>
                         </div>
@@ -1068,9 +1071,9 @@
 
                         <div class="row news-about-product border-1 m-5">
                             <h2>Thông tin nổi bật về Iphone 14 Promax <a href="" class="fs-5">Xem chi tiết</a></h2>
-                            <div class="col-md-12">
-                                <img src="../Assets/images/detailsProduct/ip14-news-1.jpeg" class="col-md-4" alt="">
-                                <div class="card border-0 col-md-8">
+                            <div class="row">
+                                <img src="../Assets/images/detailsProduct/ip14-news-1.jpeg" class="col-md-4 col-sm-4 col-4" alt="">
+                                <div class="card border-0 col-md-8 col-sm-8 col-8">
                                     <p class="card-text text-left fs-4">Apple thống trị danh sách 10 điện thoại thông
                                         minh bán chạy nhất năm 2022
                                     </p>
@@ -1079,7 +1082,7 @@
                                 </div>
                                 <div class="clearfix"></div>
                             </div>
-                            <div class="col-md-12 col-12 col-sm-12">
+                            <div class="row">
                                 <img src="../Assets/images/detailsProduct/ip14-news-2.jpeg"
                                     class="col-md-4 col-4 col-sm-4" alt="">
                                 <div class="card border-0 col-md-8 col-8 col-sm-8">
@@ -1091,9 +1094,9 @@
                                 </div>
                                 <div class="clearfix"></div>
                             </div>
-                            <div class="col-md-12">
-                                <img src="../Assets/images/detailsProduct/ip14-news-3.jpg" class="col-md-4" alt="">
-                                <div class="card border-0 col-md-8">
+                            <div class="row">
+                                <img src="../Assets/images/detailsProduct/ip14-news-3.jpg" class="col-md-4 col-sm-4 col-4" alt="">
+                                <div class="card border-0 col-md-8 col-sm-8 col-8">
                                     <p class="card-text text-left fs-4">Lionel Messi tặng 35 iPhone 14 Pro mạ vàng độc
                                         nhất vô nhị cho đồng đội
                                     </p>
@@ -1102,9 +1105,9 @@
                                 </div>
                                 <div class="clearfix"></div>
                             </div>
-                            <div class="col-md-12">
-                                <img src="../Assets/images/detailsProduct/ip14-news-4.jpeg" class="col-md-4" alt="">
-                                <div class="card border-0 col-md-8">
+                            <div class="row">
+                                <img src="../Assets/images/detailsProduct/ip14-news-4.jpeg" class="col-md-4 col-4 col-sm-4" alt="">
+                                <div class="card border-0 col-md-8 col-sm-8 col-8">
                                     <p class="card-text text-left fs-4">
                                         Apple bất ngờ tăng giá trị iPhone, Mac, iPad khi “thu cũ đổi mới”
                                     </p>
@@ -1309,8 +1312,8 @@
                     </li>
                     <li class="text-primary">Trả lời</li>
                 </ul>
-                <nav aria-label="...">
-                    <ul class="pagination pagination-lg">
+                <nav aria-label="..." class="row">
+                    <ul class="pagination pagination-lg col-md-4 offset-md-4">
                       <li class="page-item active" aria-current="page">
                         <span class="page-link">1</span>
                       </li>
@@ -1318,6 +1321,7 @@
                       <li class="page-item"><a class="page-link" href="#">3</a></li>
                       <li class="page-item"><a class="page-link" href="#">4</a></li>
                       <li class="page-item"><a class="page-link" href="#">5</a></li>
+                      <li class="page-item"><a class="page-link" href="#">>></a></li>
                     </ul>
                   </nav>
             </div>
@@ -1401,6 +1405,18 @@
                             <li class="text-primary">Trả lời</li>
                         </ul>
                     </div>
+                    <nav aria-label="..." class="row">
+                        <ul class="pagination pagination-lg col-md-4 offset-md-4 my-3">
+                          <li class="page-item active" aria-current="page">
+                            <span class="page-link">1</span>
+                          </li>
+                          <li class="page-item"><a class="page-link" href="#">2</a></li>
+                          <li class="page-item"><a class="page-link" href="#">3</a></li>
+                          <li class="page-item"><a class="page-link" href="#">4</a></li>
+                          <li class="page-item"><a class="page-link" href="#">5</a></li>
+                          <li class="page-item"><a class="page-link" href="#">>></a></li>
+                        </ul>
+                      </nav>
                 </div>
             </div>
         </div>
@@ -1605,6 +1621,7 @@
             </div>
         </div>
         <script src="../JS/header.js"></script>
+        <script src="../JS/product.js"></script>
     </div>
 </body>
 

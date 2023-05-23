@@ -1,5 +1,5 @@
 const phoneProducts = [
-    {
+    {   id: 'P1',
         path: '../assets/images/phone-product/ip_12.jpg',
         name: 'iPhone 12 Pro Max 128GB | Chính hãng VN/A',
         oldPrice: '28.990.000đ',
@@ -8,6 +8,7 @@ const phoneProducts = [
         sale: 'Giảm 12%'
     },
     {
+        id: 'P2',
         path: '../assets/images/phone-product/ip_14.jpg',
         name: 'iPhone 14 Plus 128GB | Chính hãng VN/A',
         oldPrice: '24.990.000đ',
@@ -16,6 +17,7 @@ const phoneProducts = [
         sale: 'Giảm 11%'
     },
     {
+        id: 'P3',
         path: '../assets/images/phone-product/ip_14-pro.png',
         name: 'iPhone 14 Pro 256GB | Chính hãng VN/A',
         oldPrice: '31.990.000đ',
@@ -24,6 +26,7 @@ const phoneProducts = [
         sale: 'Giảm 9%'
     },
     {
+        id: 'P4',
         path: '../assets/images/phone-product/galaxy.jpg',
         name: 'Samsung Galaxy Z Fold4',
         oldPrice: '36.390.000đ',
@@ -32,6 +35,7 @@ const phoneProducts = [
         sale: 'Giảm 11%'
     },
     {
+        id: 'P5',
         path: '../assets/images/phone-product/xiaomi.png',
         name: 'Xiaomi Redmi Note 11',
         oldPrice: '4.150.000đ',
@@ -40,6 +44,7 @@ const phoneProducts = [
         sale: 'Giảm 12%'
     },
     {
+        id: 'P6',
         path: '../assets/images/phone-product/ip_12-64gb.jpg',
         name: 'iPhone 12 64GB | Chính hãng VN/A',
         oldPrice: '16.390.000đ',
@@ -440,8 +445,8 @@ document.querySelectorAll('.click-like').forEach(function (item) {
     });
 });
 // button buy-products event
-var countMount = 0;
 const getProduct = document.querySelectorAll('.product-mount');
+var countMount = parseInt(getProduct[0].textContent);
 function addProduct(){
     countMount++;
     for(let i = 0; i < getProduct.length; i++)
