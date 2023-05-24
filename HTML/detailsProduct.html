@@ -27,6 +27,7 @@
 
 <body style="background: white;">
     <!-- Header bar-->
+    <div id="demo" class="fs-1 text-danger"></div>
     <div id="main">
         <div id="header">
             <div class="nav-bar">
@@ -81,7 +82,7 @@
                                         <div class="accordion-body text-left fs-4">
                                             <ul class="list-unstyled">
                                                 <li><a href="#">Cài đặt thông tin</a></li>
-                                                <li><a href="../HTML/formSignLog.html">Đăng xuất</a></li>
+                                                <li><a href="../HTML/formSignLog.html" onclick="sessionData()">Đăng nhập</a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -230,7 +231,7 @@
                         </a>
                     </div>
                     <div class="shopping-cart-mobile">
-                        <a href="../HTML/cart-form.html" class="text-white">
+                        <a href="../HTML/cart-form.html" class="text-white" onclick="sessionData()">
                             <i class="ti-shopping-cart">
                                 <p class="product-mount">
                                     <script>
@@ -272,7 +273,7 @@
                         </a>
                         <ul class="drop-list-item list-unstyled">
                             <li><a href="#">Đã mua</a></li>
-                            <li><a href="../HTML/cart-form.html">Hàng chờ</a></li>
+                            <li><a href="../HTML/cart-form.html" onclick="sessionData()">Hàng chờ</a></li>
                         </ul>
                         <h4>Giỏ hàng</h4>
                     </div>
@@ -558,12 +559,12 @@
                 </div>
             </div>
         </div>
-        <!-- shopping pay form -->
-        <div id="cart-shopping-pay row">
+        <!-- details product -->
+        <div id="details-product">
             <nav style="--bs-breadcrumb-divider: '>';">
                 <ol class="breadcrumb fs-4 m-5 bg-white ">
                     <li class="breadcrumb-item">
-                        <a href="../HTML/index.html" class="link">Trang chủ</a>
+                        <a href="../HTML/index.html" class="link" onclick="sessionData()">Trang chủ</a>
                     </li>
                     <li class="breadcrumb-item" aria-current="page">Iphone 14 promax</li>
                 </ol>
@@ -605,7 +606,7 @@
                             <b class="fs-2">iPhone 14 Pro Max đem đến những trải nghiệm không thể tìm thấy trên&nbsp;mọi
                                 thế hệ iPhone trước đó với&nbsp;màu Tím Deep Purple sang trọng, camera 48MP lần đầu xuất
                                 hiện, chip A16 Bionic và&nbsp;màn hình “viên thuốc” Dynamic Island linh hoạt, nịnh
-                                mắt.</b></p>
+                                mắt.</b>
 
                             <h3 style="margin-bottom: 11px; text-align: justify;"><b>Đỉnh cao thiết kế sang trọng và bền
                                     bỉ</b></h3>
@@ -938,7 +939,7 @@
                             <div class="col-md-6 col-sm-6 col-6  mx-3">
                                 <h2 class="text-danger font-weight-bold fs-1 text-left">34.990.000 <span
                                         class="text-decoration-underline">đ</span>&nbsp;&nbsp;<span
-                                        class="text-muted text-decoration-line-through fs-5">2.990.000đ</span></h2>
+                                        class="text-muted text-decoration-line-through fs-5">42.990.000đ</span></h2>
                                 <h4 class="text-danger text-left"> <i class="fa fa-bookmark text-warning"></i>+1000 điểm thưởng dự
                                     kiến</h4>
                             </div>
@@ -1622,6 +1623,7 @@
         </div>
         <script src="../JS/header.js"></script>
         <script src="../JS/product.js"></script>
+        <script src="../JS/productDataDetails.js"></script>
     </div>
 </body>
 

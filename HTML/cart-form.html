@@ -80,7 +80,7 @@
                                         <div class="accordion-body">
                                             <ul class="list-unstyled">
                                                 <li><a href="#">Cài đặt thông tin</a></li>
-                                                <li><a href="../HTML/formSignLog.html">Đăng xuất</a></li>
+                                                <li><a href="../HTML/formSignLog.html" onclick="sessionData()">Đăng nhập</a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -229,7 +229,7 @@
                         </a>
                     </div>
                     <div class="shopping-cart-mobile">
-                        <a href="../HTML/cart-form.html" class="text-white">
+                        <a href="../HTML/cart-form.html" class="text-white" onclick="sessionData()">
                             <i class="ti-shopping-cart">
                                 <p class="product-mount"><script>document.write(sessionStorage.getItem('pr-mount'))</script> </p>
                             </i>
@@ -265,7 +265,7 @@
                         </a>
                         <ul class="drop-list-item list-unstyled">
                             <li><a href="#">Đã mua</a></li>
-                            <li><a href="../HTML/cart-form.html">Hàng chờ</a></li>
+                            <li><a href="../HTML/cart-form.html" onclick="sessionData()">Hàng chờ</a></li>
                         </ul>
                         <h4>Giỏ hàng</h4>
                     </div>
@@ -277,7 +277,7 @@
                             <li><a href="#"><i class="ti-settings"
                                         style="font-size: 18px;margin-top: 0px;"></i>&nbsp;&nbsp;&nbsp;Cài đặt thông tin</a></li>
                             <li><a href="../HTML/formSignLog.html"><i class="fa fa-sign-in"
-                                        style="font-size: 18px;margin-top: 0px;"></i>&nbsp;&nbsp;&nbsp;Đăng nhập</a></li>
+                                        style="font-size: 18px;margin-top: 0px;" onclick="sessionData()"></i>&nbsp;&nbsp;&nbsp;Đăng nhập</a></li>
                         </ul>
                     </div>
                 </div>
@@ -547,7 +547,6 @@
                     </div>
                     <div class="machine">
                         <a href=""><i class="ti-home fs-5"></i> Đồ gia dụng</a>
-
                     </div>
                 </div>
             </div>
@@ -557,7 +556,7 @@
             <nav style="--bs-breadcrumb-divider: '>';">
                 <ol class="breadcrumb fs-4 m-5 bg-white ">
                     <li class="breadcrumb-item">
-                        <a href="../HTML/index.html" class="link">Trang chủ</a>
+                        <a href="../HTML/index.html" class="link" onclick="sessionData()">Trang chủ</a>
                     </li>
                     <li class="breadcrumb-item" aria-current="page">Giỏ hàng</li>
                 </ol>
@@ -880,6 +879,7 @@
         </div>
     </div>
     <script src="../JS/header.js"></script>
+    <script src="../JS/product.js"></script>
     <script src="../JS/Bonus_data_render.js"></script>
     </div>
 </body>

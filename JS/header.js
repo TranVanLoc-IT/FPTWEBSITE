@@ -1,5 +1,5 @@
 
-
+import '../JS/product'
 // nav-mobile-js
 function welcome(){
     console.log(sessionStorage.getItem('paIn'));
@@ -37,9 +37,11 @@ function btnClickProductMount(e){
         if(e.name == "asc")
         {
             mountState++;
+            addProduct();
         }
         else{
             mountState--;
+            removeProduct();
         }
         costState = (costState + (costState / (mountState == 1 ? 2 : oldMount < mountState ? mountState - 1 : oldMount))*(oldMount < mountState ? 1 : -1));
         getMount.textContent = mountState;

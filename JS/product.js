@@ -1,6 +1,7 @@
 const phoneProducts = [
-    {   id: 'P1',
-        path: '../assets/images/phone-product/ip_12.jpg',
+    {
+        id: 'P1',
+        path: '../Assets/images/phone-product/ip_12.jpg',
         name: 'iPhone 12 Pro Max 128GB | Chính hãng VN/A',
         oldPrice: '28.990.000đ',
         newPrice: '25.590.000đ',
@@ -8,8 +9,8 @@ const phoneProducts = [
         sale: 'Giảm 12%'
     },
     {
-        id: 'P2',
-        path: '../assets/images/phone-product/ip_14.jpg',
+        id: 'P6',
+        path: '../Assets/images/phone-product/ip_14.jpg',
         name: 'iPhone 14 Plus 128GB | Chính hãng VN/A',
         oldPrice: '24.990.000đ',
         newPrice: '27.990.000đ',
@@ -17,8 +18,8 @@ const phoneProducts = [
         sale: 'Giảm 11%'
     },
     {
-        id: 'P3',
-        path: '../assets/images/phone-product/ip_14-pro.png',
+        id: 'P5',
+        path: '../Assets/images/phone-product/ip_14-pro.png',
         name: 'iPhone 14 Pro 256GB | Chính hãng VN/A',
         oldPrice: '31.990.000đ',
         newPrice: '34.990.000đ',
@@ -27,7 +28,7 @@ const phoneProducts = [
     },
     {
         id: 'P4',
-        path: '../assets/images/phone-product/galaxy.jpg',
+        path: '../Assets/images/phone-product/galaxy.jpg',
         name: 'Samsung Galaxy Z Fold4',
         oldPrice: '36.390.000đ',
         newPrice: '40.990.000đ',
@@ -35,8 +36,8 @@ const phoneProducts = [
         sale: 'Giảm 11%'
     },
     {
-        id: 'P5',
-        path: '../assets/images/phone-product/xiaomi.png',
+        id: 'P2',
+        path: '../Assets/images/phone-product/xiaomi.png',
         name: 'Xiaomi Redmi Note 11',
         oldPrice: '4.150.000đ',
         newPrice: '4.690.000đ',
@@ -44,8 +45,8 @@ const phoneProducts = [
         sale: 'Giảm 12%'
     },
     {
-        id: 'P6',
-        path: '../assets/images/phone-product/ip_12-64gb.jpg',
+        id: 'P3',
+        path: '../Assets/images/phone-product/ip_12-64gb.jpg',
         name: 'iPhone 12 64GB | Chính hãng VN/A',
         oldPrice: '16.390.000đ',
         newPrice: '19.990.000đ',
@@ -56,7 +57,7 @@ const phoneProducts = [
 
 const laptopProducts = [
     {
-        path: '../assets/images/laptop/macbook_256.png',
+        path: '../Assets/images/laptop/macbook_256.png',
         name: 'Apple Macbook Pro 13 M2 2022  8GB 256GB I Chính hãng Apple Việt Nam',
         oldPrice: '31.590.000đ',
         newPrice: '35.990.000đ',
@@ -64,7 +65,7 @@ const laptopProducts = [
         sale: 'Giảm 12%'
     },
     {
-        path: '../assets/images/laptop/asus-rog.png',
+        path: '../Assets/images/laptop/asus-rog.png',
         name: 'Laptop Asus Gaming Rog Strix G15 G513IH HN015W',
         oldPrice: '18.990.000đ',
         newPrice: '23.990.000đ',
@@ -72,7 +73,7 @@ const laptopProducts = [
         sale: 'Giảm 21%'
     },
     {
-        path: '../assets/images/laptop/apple-mini.jpg',
+        path: '../Assets/images/laptop/apple-mini.jpg',
         name: 'Apple Mac mini M1 256GB 2020 I Chính hãng Apple Việt Nam ',
         oldPrice: '17.990.000đ',
         newPrice: '19.990.000đ',
@@ -80,7 +81,7 @@ const laptopProducts = [
         sale: 'Giảm 10%'
     },
     {
-        path: '../assets/images/laptop/mac-pro.png',
+        path: '../Assets/images/laptop/mac-pro.png',
         name: 'Macbook Pro 14 inch 2021 | Chính hãng Apple Việt Nam',
         oldPrice: '47.590.000đ',
         newPrice: '52.990.000đ',
@@ -88,7 +89,7 @@ const laptopProducts = [
         sale: 'Giảm 10%'
     },
     {
-        path: '../assets/images/laptop/acer-nitro.png',
+        path: '../Assets/images/laptop/acer-nitro.png',
         name: 'Laptop Gaming Acer Aspire 7 A715-42G-R4XX NH.QAYSV.008',
         oldPrice: '15.990.000đ',
         newPrice: '19.990.000đ',
@@ -99,7 +100,7 @@ const laptopProducts = [
 
 const desktopProducts = [
     {
-        path: '../assets/images/desktop/pc-gaming.png',
+        path: '../Assets/images/desktop/pc-gaming.png',
         name: 'PC Gaming Asus Rog Strix GA35 G35DX-VN003W',
         newPrice: '42.490.000đ',
         oldPrice: '47.490.000đ',
@@ -107,7 +108,7 @@ const desktopProducts = [
         sale: 'Giảm 11%'
     },
     {
-        path: '../assets/images/desktop/vesa.png',
+        path: '../Assets/images/desktop/vesa.png',
         name: 'Giá treo màn hình máy tính North Bayou NB-F80',
         newPrice: '395.000đ',
         oldPrice: '650.000đ',
@@ -115,7 +116,7 @@ const desktopProducts = [
         sale: 'Giảm 39%'
     },
     {
-        path: '../assets/images/desktop/xiaomi.png',
+        path: '../Assets/images/desktop/xiaomi.png',
         name: 'Màn hình Xiaomi Monitor 1C BHR4510GL  23.8 inch ',
         newPrice: '3.090.000đ',
         oldPrice: '3.490.000đ',
@@ -123,7 +124,7 @@ const desktopProducts = [
         sale: 'Giảm 11%'
     },
     {
-        path: '../assets/images/desktop/dell.png',
+        path: '../Assets/images/desktop/dell.png',
         name: 'Màn hình Dell UltraSharp 23.8 inch U2422H',
         newPrice: '6.790.000đ',
         oldPrice: '7.990.000đ',
@@ -131,7 +132,7 @@ const desktopProducts = [
         sale: 'Giảm 15%'
     },
     {
-        path: '../assets/images/desktop/asus.png',
+        path: '../Assets/images/desktop/asus.png',
         name: 'Màn hình Asus VZ249HEG1R 24 inch',
         newPrice: '2.990.000đ',
         oldPrice: '3.990.000đ',
@@ -142,7 +143,7 @@ const desktopProducts = [
 
 const tabletProducts = [
     {
-        path: '../assets/images/tablet/ipad-pro.jpg',
+        path: '../Assets/images/tablet/ipad-pro.jpg',
         name: 'Apple iPad Pro 11 2021 M1 WiFi 128GB I Chính hãng Apple Việt Nam',
         newPrice: '19.690.000đ',
         oldPrice: '23.990.000đ',
@@ -150,7 +151,7 @@ const tabletProducts = [
         sale: 'Giảm 18%'
     },
     {
-        path: '../assets/images/tablet/samsung.jpg',
+        path: '../Assets/images/tablet/samsung.jpg',
         name: 'Samsung Galaxy Tab S8 Plus 256GB',
         newPrice: '23.400.000đ',
         oldPrice: '27.990.000đ',
@@ -158,7 +159,7 @@ const tabletProducts = [
         sale: 'Giảm 16%'
     },
     {
-        path: '../assets/images/tablet/samsung-ultra.jpg',
+        path: '../Assets/images/tablet/samsung-ultra.jpg',
         name: 'Samsung Galaxy Tab S8 Ultra',
         newPrice: '25.190.000đ',
         oldPrice: '30.990.000đ',
@@ -166,7 +167,7 @@ const tabletProducts = [
         sale: 'Giảm 19%'
     },
     {
-        path: '../assets/images/tablet/xiaomi.jpg',
+        path: '../Assets/images/tablet/xiaomi.jpg',
         name: 'Xiami Pad 5',
         newPrice: '7.990.000đ',
         oldPrice: '8.990.000đ',
@@ -174,7 +175,7 @@ const tabletProducts = [
         sale: 'Giảm 11%'
     },
     {
-        path: '../assets/images/tablet/samsung-wifi.jpg',
+        path: '../Assets/images/tablet/samsung-wifi.jpg',
         name: 'Samsung Galaxy Tab S8 WIFI',
         newPrice: '14.290.000đ',
         oldPrice: '17.990.000đ',
@@ -185,7 +186,7 @@ const tabletProducts = [
 
 const headPhoneProducts = [
     {
-        path: '../assets/images/headphone/h1.jpg',
+        path: '../Assets/images/headphone/h1.jpg',
         name: 'Tai nghe chụp tai Soundpeats A6 chống ồn',
         newPrice: '1.290.000đ',
         oldPrice: '1.600.000đ',
@@ -193,7 +194,7 @@ const headPhoneProducts = [
         desc: 'Thu cũ lên đời - Trợ giá 300k'
     },
     {
-        path: '../assets/images/headphone/h2.jpg',
+        path: '../Assets/images/headphone/h2.jpg',
         name: 'Tai nghe không dây JBL Live Pro+',
         newPrice: '2.390.000đ',
         oldPrice: '2.990.000đ',
@@ -201,7 +202,7 @@ const headPhoneProducts = [
         desc: 'BAO DA CAO CẤP CHO TAI NGHE JBL LIVE PRO+'
     },
     {
-        path: '../assets/images/headphone/h3.jpg',
+        path: '../Assets/images/headphone/h3.jpg',
         name: 'Tai nghe chụp tai Sony WH-1000XM4   ',
         newPrice: '6.290.000đ',
         oldPrice: '8.490.000đ',
@@ -209,7 +210,7 @@ const headPhoneProducts = [
         desc: 'Tặng Áo Khoác Sony Extrabass'
     },
     {
-        path: '../assets/images/headphone/h4.jpg',
+        path: '../Assets/images/headphone/h4.jpg',
         name: 'Tai nghe Bluetooth Apple AirPods 2 VN/A',
         newPrice: '2.690.000đ',
         oldPrice: '3.990.000đ',
@@ -217,7 +218,7 @@ const headPhoneProducts = [
         desc: 'Nhận gói 6 tháng Apple Music miễn phí'
     },
     {
-        path: '../assets/images/headphone/h5.jpg',
+        path: '../Assets/images/headphone/h5.jpg',
         name: 'Tai nghe Bluetooth Apple AirPods 3 MagSafe | Chính hãng Apple Việt Nam',
         newPrice: '4.790.000đ',
         oldPrice: '4.990.000đ',
@@ -228,7 +229,7 @@ const headPhoneProducts = [
 
 const watchProducts = [
     {
-        path: '../assets/images/watch/w1.jpg',
+        path: '../Assets/images/watch/w1.jpg',
         name: 'Samsung Galaxy Watch5',
         newPrice: '6.250.000đ',
         oldPrice: '8.990.000đ',
@@ -236,7 +237,7 @@ const watchProducts = [
         desc: 'Thu cũ lên đời - Trợ giá 300k'
     },
     {
-        path: '../assets/images/watch/w2.jpg',
+        path: '../Assets/images/watch/w2.jpg',
         name: 'Apple Watch Series 7 45mm (GPS) Viền nhôm dây cao su | Chính hãng VN/A',
         newPrice: '10.590.000đ',
         oldPrice: '12.990.000đ',
@@ -244,7 +245,7 @@ const watchProducts = [
         desc: 'Thu cũ lên đời - Trợ giá 500k'
     },
     {
-        path: '../assets/images/watch/w3.jpg',
+        path: '../Assets/images/watch/w3.jpg',
         name: 'Đồng hồ thông minh Huawei Watch GT3 dây da',
         newPrice: '4.990.000đ',
         oldPrice: '6.990.000đ',
@@ -252,7 +253,7 @@ const watchProducts = [
         desc: 'Dây đeo đồng hồ Huawei Watch GT3 Silicone 46mm'
     },
     {
-        path: '../assets/images/watch/w4.jpg',
+        path: '../Assets/images/watch/w4.jpg',
         name: 'Đồng hồ thông minh trẻ em Myalo KidsPhone K84',
         newPrice: '2.790.000đ',
         oldPrice: '2.990.000đ',
@@ -260,7 +261,7 @@ const watchProducts = [
         desc: 'Tặng tai nghe trẻ em Oaxis Myfirst Headphones Wireless'
     },
     {
-        path: '../assets/images/watch/w1.jpg',
+        path: '../Assets/images/watch/w1.jpg',
         name: 'Apple Watch SE 2022 40mm | Chính Hãng VN/A',
         newPrice: '7.290.000đ',
         oldPrice: '7.490.000đ',
@@ -271,7 +272,7 @@ const watchProducts = [
 
 const houseProducts = [
     {
-        path: '../assets/images/house/hs1.jpg',
+        path: '../Assets/images/house/hs1.jpg',
         name: 'Máy tạo Oxy Hidgeem plus 7 lít',
         newPrice: '5.000.000đ',
         oldPrice: '7.700.000đ',
@@ -279,7 +280,7 @@ const houseProducts = [
         desc: 'Tặng máy đo nhịp tim và nồng độ oxy trong máu Finicare YM101'
     },
     {
-        path: '../assets/images/house/hs2.png',
+        path: '../Assets/images/house/hs2.png',
         name: 'Máy Chiếu Smart TV 100 inch Bỏ Túi Samsung The Freestyle SP-LSP3',
         newPrice: '16.490.000đ',
         oldPrice: '24.900.000đ',
@@ -287,7 +288,7 @@ const houseProducts = [
         desc: 'Tặng pin sạc dự phòng 32000mAh, biến máy chiếu thành không dây, xem trọn bộ phim 3 giờ và 1km khác'
     },
     {
-        path: '../assets/images/house/hs3.jpg',
+        path: '../Assets/images/house/hs3.jpg',
         name: 'Máy lọc không khí Xiaomi Air Purifier 4 Lite',
         newPrice: '2.890.000đ',
         oldPrice: '3.990.000đ',
@@ -295,7 +296,7 @@ const houseProducts = [
         desc: 'Tặng máy đo nhịp tim và nồng độ oxy trong máu Finicare YM101'
     },
     {
-        path: '../assets/images/house/hs4.jpg',
+        path: '../Assets/images/house/hs4.jpg',
         name: 'Máy lọc không khí Xiaomi Air Purifier 4 Pro',
         newPrice: '5.090.000đ',
         oldPrice: '6.290.000đ',
@@ -303,7 +304,7 @@ const houseProducts = [
         desc: 'Tặng máy đo nhịp tim và nồng độ oxy trong máu Finicare YM101'
     },
     {
-        path: '../assets/images/house/hs5.jpg',
+        path: '../Assets/images/house/hs5.jpg',
         name: 'Robot hút bụi lau nhà Ecovacs Deebot X1 OMNI ',
         newPrice: '21.990.000đ',
         oldPrice: '31.900.000đ',
@@ -314,7 +315,7 @@ const houseProducts = [
 
 const tiviProducts = [
     {
-        path: '../assets/images/tivi/t1.jpg',
+        path: '../Assets/images/tivi/t1.jpg',
         name: 'Smart tivi Xiaomi P1 43 inch',
         newPrice: '7.990.000đ',
         oldPrice: '9.990.000đ',
@@ -322,7 +323,7 @@ const tiviProducts = [
         desc: 'Giảm 10% loa Soundbar khi mua kèm TV '
     },
     {
-        path: '../assets/images/tivi/t2.png',
+        path: '../Assets/images/tivi/t2.png',
         name: 'Smart TV Nanocell LG 4K 43 INCH 43NANO77TPA',
         newPrice: '10.590.000đ',
         oldPrice: '16.900.000đ',
@@ -330,7 +331,7 @@ const tiviProducts = [
         desc: 'Giảm 10% loa Soundbar khi mua kèm TV '
     },
     {
-        path: '../assets/images/tivi/t3.jpg',
+        path: '../Assets/images/tivi/t3.jpg',
         name: 'Smart tivi Xiaomi P1 55 inch',
         newPrice: '8.990.000đ',
         oldPrice: '11.990.000đ',
@@ -338,7 +339,7 @@ const tiviProducts = [
         desc: 'Giảm 10% loa Soundbar khi mua kèm TV '
     },
     {
-        path: '../assets/images/tivi/t4.jpg',
+        path: '../Assets/images/tivi/t4.jpg',
         name: 'Smart Tivi Xiaomi A2 58 inch',
         newPrice: '12.990.000đ',
         oldPrice: '13.990.000đ',
@@ -346,7 +347,7 @@ const tiviProducts = [
         desc: 'Tặng Robot hút bụi Xiaomi Mop 2 Lite - Không lấy quà giảm 3.500.000đ'
     },
     {
-        path: '../assets/images/tivi/t5.jpg',
+        path: '../Assets/images/tivi/t5.jpg',
         name: 'Smart Tivi Xiaomi P1 43 inch',
         newPrice: '7.990.000đ',
         oldPrice: '9.990.000đ',
@@ -399,9 +400,11 @@ const render = (products, root) => {
                     <p>${item.desc || ''}</p>
                 </div>
                 <div class="buy-product">
-                    <button class="btn btn-danger" onClick="addProduct()" type="submit">
+                <a class='text-white' href='../HTML/detailsProduct.html' id=${item.id} onClick="sessionProductDetails(this)">
+                    <button class="btn btn-danger fs-3" type="submit">
                     <i class="ti-shopping-cart fs-3"></i>&nbsp;Mua ngay
                     </button>
+                </a>
                 </div>
                 <div class="product-action">
                     <span>Yêu thích</span>
@@ -447,17 +450,20 @@ document.querySelectorAll('.click-like').forEach(function (item) {
 // button buy-products event
 const getProduct = document.querySelectorAll('.product-mount');
 var countMount = parseInt(getProduct[0].textContent);
-function addProduct(){
+function addProduct() {
     countMount++;
-    for(let i = 0; i < getProduct.length; i++)
-    {
+    for (let i = 0; i < getProduct.length; i++) {
         getProduct[i].innerHTML = countMount;
     }
 }
-function removeProduct(){
+function removeProduct() {
     countMount--;
     getProduct.textContent = countMount;
 }
-function sessionData(){
-    sessionStorage.setItem('pr-mount', document.querySelector('.product-mount').textContent);
+function sessionData() {
+    sessionStorage.setItem('pr-mount', countMount);
+}
+function sessionProductDetails(t){
+    sessionStorage.setItem(t.id,t.id);
+    sessionData();
 }

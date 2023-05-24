@@ -3,6 +3,7 @@ Login - Register - ForgotPass Table -->
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -24,8 +25,9 @@ Login - Register - ForgotPass Table -->
     <!-- bootstrap 5-->
     <link href="../Assets/bootstrap-5.0.2-dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="../Assets/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
-   
+
 </head>
+
 <body>
     <div id="header">
         <div class="nav-bar">
@@ -50,19 +52,14 @@ Login - Register - ForgotPass Table -->
                                         Thông tin hot
                                     </button>
                                 </h2>
-                                <div id="collapseZero" class="accordion-collapse collapse"
-                                    aria-labelledby="headingZero" data-bs-parent="#accordionParent">
+                                <div id="collapseZero" class="accordion-collapse collapse" aria-labelledby="headingZero"
+                                    data-bs-parent="#accordionParent">
                                     <div class="accordion-body">
                                         <ul class="list-unstyled">
-                                            <li><a href="#">Tin mới</a></li>
-                                            <li><a href="#">Khuyến mãi</a></li>
-                                            <li><a href="#">Điện máy - Gia dụng</a></li>
-                                            <li><a href="#">Thủ thuật</a></li>
-                                            <li><a href="#">For gamers</a></li>
-                                            <li><a href="#">App & games</a></li>
-                                            <li><a href="#">Sự kiện</a></li>
-                                            <li><a href="#">Video hot</a></li>
-                                            <li><a href="#">Sinh viên</a></li>
+                                            <li><a href="../HTML/index.html" id="mainPage" onclick="sessionData()">Trang chủ</a></li>
+                                            <li><a href="https://fptshop.com.vn/gioi-thieu">Thông tin doanh nghiệp</a></li>
+                                            <li><a href="#" onclick="contactF()" class="contact-header">Liên hệ</a></li>
+                                            <li><a href="#" class="service-header">Dịch Vụ</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -80,7 +77,8 @@ Login - Register - ForgotPass Table -->
                                     <div class="accordion-body">
                                         <ul class="list-unstyled">
                                             <li><a href="#">Cài đặt thông tin</a></li>
-                                            <li><a href="../HTML/formSignLog.html">Đăng xuất</a></li>
+                                            <li><a href="../HTML/formSignLog.html" onclick="sessionData()">Đăng nhập</a>
+                                            </li>
                                         </ul>
                                     </div>
                                 </div>
@@ -89,13 +87,12 @@ Login - Register - ForgotPass Table -->
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="headingTwo">
                                     <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseTwo" aria-expanded="true"
-                                        aria-controls="collapseTwo">
+                                        data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
                                         Bộ lọc
                                     </button>
                                 </h2>
-                                <div id="collapseTwo" class="accordion-collapse collapse"
-                                    aria-labelledby="headingTwo" data-bs-parent="#accordionParent">
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                    data-bs-parent="#accordionParent">
                                     <div class="accordion-body">
                                         <div class="accordion" id="accordionFilter">
                                             <div class="accordion-item">
@@ -146,8 +143,7 @@ Login - Register - ForgotPass Table -->
                                                     </button>
                                                 </h2>
                                                 <div id="collapseThree" class="accordion-collapse collapse"
-                                                    aria-labelledby="headingThree"
-                                                    data-bs-parent="#accordionFilter">
+                                                    aria-labelledby="headingThree" data-bs-parent="#accordionFilter">
                                                     <div class="accordion-body">
                                                         <select name="" id="">
                                                             <option value="t1">Hà Nội</option>
@@ -171,8 +167,8 @@ Login - Register - ForgotPass Table -->
                                         Sản phẩm
                                     </button>
                                 </h2>
-                                <div id="collapseFour" class="accordion-collapse collapse"
-                                    aria-labelledby="headingFour" data-bs-parent="#accordionParent">
+                                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                    data-bs-parent="#accordionParent">
                                     <div class="accordion-body">
                                         <ul class="list-unstyled">
                                             <li><a href="#">Điện thoại</a></li>
@@ -196,8 +192,8 @@ Login - Register - ForgotPass Table -->
                                         Thanh toán
                                     </button>
                                 </h2>
-                                <div id="collapseFive" class="accordion-collapse collapse"
-                                    aria-labelledby="headingFive" data-bs-parent="#accordionParent">
+                                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                                    data-bs-parent="#accordionParent">
                                     <div class="accordion-body">
                                         <ul class="list-unstyled">
                                             <li><a href="#">Cài đặt thanh toán</a></li>
@@ -214,8 +210,8 @@ Login - Register - ForgotPass Table -->
             <!-- nav - search -->
             <div class="nav-search h-75">
                 <form class="d-flex h-100" action="#" method="GET">
-                    <input class="form-control h-100" type="search"
-                        placeholder="Tìm điện thoại, laptop, phụ kiện ..." aria-label="Search">
+                    <input class="form-control h-100" type="search" placeholder="Tìm điện thoại, laptop, phụ kiện ..."
+                        aria-label="Search">
                     <button class="btn btn-dark text-white" type="submit"><i
                             class="ti-search position-relative fw-bolder m-1"></i></button>
                 </form>
@@ -231,7 +227,9 @@ Login - Register - ForgotPass Table -->
                 <div class="shopping-cart-mobile">
                     <a href="../HTML/cart-form.html" class="text-white">
                         <i class="ti-shopping-cart">
-                            <p class="product-mount"><script>document.write(sessionStorage.getItem('pr-mount'))</script> </p>
+                            <p class="product-mount">
+                                <script>document.write(sessionStorage.getItem('pr-mount'))</script>
+                            </p>
                         </i>
                     </a>
                 </div>
@@ -242,7 +240,7 @@ Login - Register - ForgotPass Table -->
                     <i class="ti-announcement"></i>
                     <h4>Doanh nghiệp</h4>
                     <ul class="list-unstyled drop-list-item navigation">
-                        <li><a href="../HTML/index.html" id="mainPage">Trang chủ</a></li>
+                        <li><a href="../HTML/index.html" id="mainPage" onclick="sessionData()">Trang chủ</a></li>
                         <li><a href="https://fptshop.com.vn/gioi-thieu">Thông tin doanh nghiệp</a></li>
                         <li><a href="#" onclick="contactF()" class="contact-header">Liên hệ</a></li>
                         <li><a href="#" class="service-header">Dịch Vụ</a></li>
@@ -260,7 +258,7 @@ Login - Register - ForgotPass Table -->
                     </a>
                     <ul class="drop-list-item list-unstyled">
                         <li><a href="#">Đã mua</a></li>
-                        <li><a href="../HTML/cart-form.html">Hàng chờ</a></li>
+                        <li><a href="../HTML/cart-form.html" onclick="sessionData()">Hàng chờ</a></li>
                     </ul>
                     <h4>Giỏ hàng</h4>
                 </div>
@@ -270,9 +268,10 @@ Login - Register - ForgotPass Table -->
                     <h4>Tài khoản</h4>
                     <ul class="drop-list-item list-unstyled">
                         <li><a href="#"><i class="ti-settings"
-                                    style="font-size: 18px;margin-top: 0px;"></i>&nbsp;&nbsp;&nbsp;Cài đặt thông tin</a></li>
+                                    style="font-size: 18px;margin-top: 0px;"></i>&nbsp;&nbsp;&nbsp;Cài đặt thông tin</a>
+                        </li>
                         <li><a href="../HTML/formSignLog.html"><i class="fa fa-sign-in"
-                                    style="font-size: 18px;margin-top: 0px;"></i>&nbsp;&nbsp;&nbsp;Đăng nhập</a></li>
+                                    style="font-size: 18px;margin-top: 0px;" onclick="sessionData()"></i>&nbsp;&nbsp;&nbsp;Đăng nhập</a></li>
                     </ul>
                 </div>
             </div>
@@ -325,8 +324,7 @@ Login - Register - ForgotPass Table -->
                             <div class="top-selling">
                                 <h4 class="text-left">Bán chạy nhất</h4>
                                 <div class="img-top-sell">
-                                    <a href="#"><img src="../Assets/images/header/SS-A34-best-Selling.jpg"
-                                            alt=""></a>
+                                    <a href="#"><img src="../Assets/images/header/SS-A34-best-Selling.jpg" alt=""></a>
                                 </div>
                                 <div class="descript-top-sell">
                                     <a href="#">Samsung Galaxy A34 5G
@@ -335,8 +333,7 @@ Login - Register - ForgotPass Table -->
                                 </div>
                                 <br><br>
                                 <div class="img-top-sell">
-                                    <a href="#"><img src="../Assets/images/header/Oppo-A57-best-Selling.jpg"
-                                            alt=""></a>
+                                    <a href="#"><img src="../Assets/images/header/Oppo-A57-best-Selling.jpg" alt=""></a>
                                 </div>
                                 <div class="descript-top-sell">
                                     <a href="#">OPPO A57 4GB-128GB</a>
@@ -344,8 +341,7 @@ Login - Register - ForgotPass Table -->
                                 </div>
                             </div>
                             <div class="img-extra-selling">
-                                <a href="#"><img src="../Assets/images/header/galaxy-s22-extra-selling.png"
-                                        alt=""></a>
+                                <a href="#"><img src="../Assets/images/header/galaxy-s22-extra-selling.png" alt=""></a>
                             </div>
                             <div class="clearfix"></div>
                         </div>
@@ -453,8 +449,8 @@ Login - Register - ForgotPass Table -->
                             <div class="top-selling">
                                 <h4 class="text-left">Bán chạy nhất</h4>
                                 <div class="img-top-sell">
-                                    <a href="../HTML/detailsProduct.html" onclick="sessionData()"><img src="../Assets/images/header/iphone14-pro-best-selling.jpg"
-                                            alt=""></a>
+                                    <a href="../HTML/detailsProduct.html" onclick="sessionData()"><img
+                                            src="../Assets/images/header/iphone14-pro-best-selling.jpg" alt=""></a>
                                 </div>
                                 <div class="descript-top-sell">
                                     <a href="../HTML/detailsProduct.html" onclick="sessionData()">iPhone 14 Pro Max
@@ -472,8 +468,7 @@ Login - Register - ForgotPass Table -->
                                 </div>
                             </div>
                             <div class="img-extra-selling">
-                                <a href="#"><img src="../Assets/images/header/ip14-promax-extra-selling.png"
-                                        alt=""></a>
+                                <a href="#"><img src="../Assets/images/header/ip14-promax-extra-selling.png" alt=""></a>
                             </div>
                             <div class="clearfix"></div>
                         </div>
@@ -553,23 +548,24 @@ Login - Register - ForgotPass Table -->
         <div class="form-box ">
             <form action="#">
                 <div class="input-box">
-                    <i class="ti-email icon" ></i>
+                    <i class="ti-email icon"></i>
                     <input id="email-login" type="email" required>
                     <label>Email</label>
-                    
+
                 </div>
                 <div class="input-box">
                     <i class="ti-lock icon"></i>
                     <input id="password-login" type="password" required>
                     <label>Mật khẩu</label>
                 </div>
-                
+
                 <div class="container">
                     Ghi nhớ đăng nhập &nbsp<input type="checkbox">
                     <a href="#" class="rt-forgotpassword">Quên mật khẩu?</a>
                 </div>
                 <button class="btn btn-block btn-danger fs-3 handle-button">Đăng Nhập</button>
-                <p class="note-register fs-4" style="text-align: center;">Nếu như bạn chưa có tài khoản <a href="#" class="rt-register">Đăng ký ngay!</a></p>
+                <p class="note-register fs-4" style="text-align: center;">Nếu như bạn chưa có tài khoản <a href="#"
+                        class="rt-register">Đăng ký ngay!</a></p>
             </form>
         </div>
     </div>
@@ -600,10 +596,11 @@ Login - Register - ForgotPass Table -->
                     <label>Nhập lại mật khẩu</label>
                 </div>
                 <div class="container">
-                Chấp nhận <a href="#">chính sách</a>&nbsp<input type="checkbox" id="policy-reg">
+                    Chấp nhận <a href="#">chính sách</a>&nbsp<input type="checkbox" id="policy-reg">
                 </div>
                 <button class="btn btn-block btn-danger fs-3 handle-button">Đăng Ký</button>
-                <p class="note-register fs-4" style="text-align: center; margin: 10px 0px;">Bạn đã có tài khoản <a href="#" class="rt-login">Đăng nhập ngay!</a></p>
+                <p class="note-register fs-4" style="text-align: center; margin: 10px 0px;">Bạn đã có tài khoản <a
+                        href="#" class="rt-login">Đăng nhập ngay!</a></p>
             </form>
         </div>
     </div>
@@ -620,7 +617,8 @@ Login - Register - ForgotPass Table -->
                     <label>Email</label>
                 </div>
                 <button class="btn btn-block btn-danger fs-3 handle-button">Tiếp tục</button>
-                <p class="note-register fs-4" style="text-align: center; margin: 10px 0px;">Bạn đã có tài khoản <a href="#" class="rt-login">Đăng nhập ngay!</a></p>
+                <p class="note-register fs-4" style="text-align: center; margin: 10px 0px;">Bạn đã có tài khoản <a
+                        href="#" class="rt-login">Đăng nhập ngay!</a></p>
             </form>
         </div>
     </div>
@@ -630,12 +628,12 @@ Login - Register - ForgotPass Table -->
         <h2 class="title">Quên mật khẩu</h2>
         <div class="form-box ">
             <form action="#">
-                <div style="text-align: center;" class="font-bold"> 
+                <div style="text-align: center;" class="font-bold">
                     <i class="ti-user fs-1" style="font-size: 1.5em; font-weight: 500;"></i>
                     <p class="wellcome-user" style="margin-top: 10px;">Chào mừng quay trở lại</p>
                     <p class="countdow-OTP">Mã OTP đã gửi tới bạn Có hiệu lực trong vòng</p>
                 </div>
-               
+
                 <div class="input-box">
                     <i class="ti-key icon"></i>
                     <input type="text" id="OTP" required>
@@ -644,7 +642,7 @@ Login - Register - ForgotPass Table -->
                     <span class="errOTP fs-4 text-danger text-left m-2"></span>
                 </div>
                 <button class="btn btn-block btn-danger handle-button fs-3">Tiếp tục</button>
-               
+
             </form>
         </div>
     </div>
@@ -659,47 +657,48 @@ Login - Register - ForgotPass Table -->
                     <input id="password-qmk" type="password" required>
                     <label>Mật khẩu Mới</label>
                 </div>
-                <div  class="input-box">
+                <div class="input-box">
                     <i class="ti-lock icon"></i>
                     <input id="repassword-qmk" type="password" required>
                     <label>Nhập Lại Mật khẩu</label>
                 </div>
                 <button class="btn btn-block btn-danger fs-3 handle-button">Tiếp tục</button>
-               
+
             </form>
         </div>
     </div>
-        <div id="contact" class="contact">
-            <i class="ti-close icon-close"></i>
-            <h2 class="title">Liên Hệ</h2>
-            <div class="row_padding32">
-                <div class="address">
-                        <i class="ti-location-pin icon"></i>
-                        &nbsp &nbsp Viet Nam, VNA<br>
-                        <i class="ti-mobile icon"></i>
-                        &nbsp &nbsp Phone: +84 34328540 <br>
-                        <i class="ti-email icon"></i>
-                        &nbsp &nbsp Email: phamnguyenvu287@gmail.com<br>
-                </div>
-
-                <div class="information">
-                    <form target="_blank">
-                        <div class="haft">
-                            <input type="text" placeholder="Name" class="name-space-if">
-                            &nbsp
-                            <input type="text" placeholder="Email" class="email-space-if">
-                        </div>
-                        <input type="text" style="width: 100%;" placeholder="Message" class="message-space-if">
-                    </form>
-                    <button class="send">SEND</button>
-                </div>
+    <div id="contact" class="contact">
+        <i class="ti-close icon-close"></i>
+        <h2 class="title">Liên Hệ</h2>
+        <div class="row_padding32">
+            <div class="address">
+                <i class="ti-location-pin icon"></i>
+                &nbsp &nbsp Viet Nam, VNA<br>
+                <i class="ti-mobile icon"></i>
+                &nbsp &nbsp Phone: +84 34328540 <br>
+                <i class="ti-email icon"></i>
+                &nbsp &nbsp Email: phamnguyenvu287@gmail.com<br>
             </div>
-       
-        
-        <div class="footer"> 
+
+            <div class="information">
+                <form target="_blank">
+                    <div class="haft">
+                        <input type="text" placeholder="Name" class="name-space-if">
+                        &nbsp
+                        <input type="text" placeholder="Email" class="email-space-if">
+                    </div>
+                    <input type="text" style="width: 100%;" placeholder="Message" class="message-space-if">
+                </form>
+                <button class="send">SEND</button>
+            </div>
+        </div>
+
+
+        <div class="footer">
             <div class="endfooter">
                 <a href="https://www.instagram.com/vuzpham287/" target="_blank"><i class="ti-instagram icon"></i></a>
-                <a href="https://www.facebook.com/phamnguyen.vu.106" target="_blank"><i class="ti-facebook icon"></i></a>
+                <a href="https://www.facebook.com/phamnguyen.vu.106" target="_blank"><i
+                        class="ti-facebook icon"></i></a>
                 <a href=""><i class="ti-google icon"></i></a>
                 <a href="https://github.com/VuzPham" target="_blank"><i class="ti-github icon"></i></a>
                 <a href=""><i class="ti-twitter-alt icon"></i></a>
@@ -709,4 +708,6 @@ Login - Register - ForgotPass Table -->
     </div>
 </body>
 <script src="../JS/sign_log.js"></script>
+<script src="../JS/product.js"></script>
+
 </html>
