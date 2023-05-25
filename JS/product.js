@@ -386,10 +386,10 @@ const render = (products, root) => {
         products.forEach(function (item, index) {
             if (index == rand)
                 renderString += `
-        <div class="col-md-3 col-sm-6">
-            <div class="product-item container">
-                <div class="product-img">
-                    <a href="#"><img src=${item.path} alt=""></a>
+        <div class="col-md-3 col-sm-6 col-12">
+            <div class="product-item row">
+                <div class="product-img w-100">
+                <a href="#"><img src=${item.path} alt=""></a>
                 </div>
                 <p class="product-name">${item.name}</p>
                 <div class="product-price">
@@ -410,9 +410,7 @@ const render = (products, root) => {
                     <span>Yêu thích</span>
                     <i class='ti-heart click-like'></i>
                 </div>
-                <div class="product-sale-off">
-                    <span>${item.sale}</span>
-                </div>
+               
             </div>
         </div>
      `
@@ -463,7 +461,7 @@ function removeProduct() {
 function sessionData() {
     sessionStorage.setItem('pr-mount', countMount);
 }
-function sessionProductDetails(t){
-    sessionStorage.setItem(t.id,t.id);
+function sessionProductDetails(t) {
+    sessionStorage.setItem(t.id, t.id);
     sessionData();
 }
