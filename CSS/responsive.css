@@ -64,4 +64,23 @@
         width: 50% !important;
         height: 75% !important;
     }
+    /*  */
+    .product-img{
+        height: 30vw;
+        padding-top: 40px;
+    }
+    .product-img>a{
+        width: 95% !important;
+        height: 85% !important
+    }
+}
+@media (width <= 559px) {
+    /* .product-img{
+        height: 60vw;
+        padding-top: 43px;
+    }
+    .product-img a{
+        width: 95% !important;
+        height: 80% !important;
+    } */
 }

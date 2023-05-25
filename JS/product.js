@@ -9,7 +9,7 @@ const phoneProducts = [
         sale: 'Giảm 12%'
     },
     {
-        id: 'P6',
+        id: 'P3',
         path: '../Assets/images/phone-product/ip_14.jpg',
         name: 'iPhone 14 Plus 128GB | Chính hãng VN/A',
         oldPrice: '24.990.000đ',
@@ -45,7 +45,7 @@ const phoneProducts = [
         sale: 'Giảm 12%'
     },
     {
-        id: 'P3',
+        id: 'P6',
         path: '../Assets/images/phone-product/ip_12-64gb.jpg',
         name: 'iPhone 12 64GB | Chính hãng VN/A',
         oldPrice: '16.390.000đ',
@@ -367,6 +367,7 @@ const productTivi = document.querySelector('.product-tivi-js')
 
 var randomProduct = [];
 var renderString = "";
+var renderProductCart = "";
 var checkSame = (index, array) => {
     for (let i = 0; i < array.length; i++) {
         if (index == array[i]) {
@@ -386,23 +387,23 @@ const render = (products, root) => {
         products.forEach(function (item, index) {
             if (index == rand)
                 renderString += `
-        <div class="col-md-3 col-sm-6 col-12">
+        <div class="col-md-3 col-sm-6 col-xs-6 col-12">
             <div class="product-item row">
-                <div class="product-img w-100">
-                <a href="#"><img src=${item.path} alt=""></a>
+                <div class="product-img row">
+                <a href="#" class="w-100 col-md-12 col-12"><img src=${item.path} alt=""></a>
                 </div>
                 <p class="product-name">${item.name}</p>
                 <div class="product-price">
                     <p class="product-new-price">${item.newPrice}</p>
                     <p class="product-old-price">${item.oldPrice}</p>
                 </div>
-                <div class="product-promotion">
+                <div class="product-promotion fs-3">
                     <p>${item.desc || ''}</p>
                 </div>
                 <div class="buy-product">
-                <a class='text-white' href='../HTML/detailsProduct.html' id=${item.id} onClick="sessionProductDetails(this)">
-                    <button class="btn btn-danger fs-3" type="submit">
-                    <i class="ti-shopping-cart fs-3"></i>&nbsp;Mua ngay
+                <a class='text-white my-2' href='../HTML/detailsProduct.html' id=${item.id} onClick="sessionProductDetails(this)">
+                    <button class="btn btn-danger fs-2 p-3" type="submit">
+                    <i class="ti-shopping-cart fs-2"></i>&nbsp;Mua ngay
                     </button>
                 </a>
                 </div>
@@ -413,7 +414,7 @@ const render = (products, root) => {
                
             </div>
         </div>
-     `
+     `;
         })
     }
     root.innerHTML = renderString;
@@ -446,22 +447,33 @@ document.querySelectorAll('.click-like').forEach(function (item) {
     });
 });
 // button buy-products event
-const getProduct = document.querySelectorAll('.product-mount');
-var countMount = parseInt(getProduct[0].textContent);
 function addProduct() {
-    countMount++;
+    var getProduct = document.querySelectorAll('.product-mount');
+    var countMount = parseInt(sessionStorage.getItem('pr-mount'));
+    sessionStorage.removeItem("pr-mount");
+    let num = countMount + 1;
     for (let i = 0; i < getProduct.length; i++) {
-        getProduct[i].innerHTML = countMount;
+        getProduct[i].innerHTML = num;
     }
+    sessionStorage.setItem('pr-mount',num);
 }
 function removeProduct() {
-    countMount--;
-    getProduct.textContent = countMount;
-}
-function sessionData() {
-    sessionStorage.setItem('pr-mount', countMount);
+    var getProduct = document.querySelectorAll('.product-mount');
+    var countMount = parseInt(sessionStorage.getItem('pr-mount'));
+    sessionStorage.removeItem("pr-mount");
+    if(countMount > 0) {
+        let num = countMount - 1;
+        for (let i = 0; i < getProduct.length; i++) {
+            getProduct[i].innerHTML = num;
+        }
+        sessionStorage.setItem('pr-mount',num);
+    }
 }
 function sessionProductDetails(t) {
+    sessionStorage.clear();
     sessionStorage.setItem(t.id, t.id);
+    sessionStorage.setItem('pr-mount','0');
     sessionData();
 }
+
+

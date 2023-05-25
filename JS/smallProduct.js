@@ -1,9 +1,5 @@
 const accessories = [
     {
-        path: '../assets/images/accessory/a1.png',
-        title: 'Nổi bật'
-    },
-    {
         path: '../assets/images/accessory/a2.png',
         title: 'Phụ kiện Apple'
     },

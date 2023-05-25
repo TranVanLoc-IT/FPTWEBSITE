@@ -80,7 +80,7 @@
                                         <div class="accordion-body">
                                             <ul class="list-unstyled">
                                                 <li><a href="#">Cài đặt thông tin</a></li>
-                                                <li><a href="../HTML/formSignLog.html" onclick="sessionData()">Đăng nhập</a></li>
+                                                <li><a href="../HTML/formSignLog.html" >Đăng nhập</a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -229,9 +229,9 @@
                         </a>
                     </div>
                     <div class="shopping-cart-mobile">
-                        <a href="../HTML/cart-form.html" class="text-white" onclick="sessionData()">
+                        <a href="../HTML/cart-form.html" class="text-white" >
                             <i class="ti-shopping-cart">
-                                <p class="product-mount"><script>document.write(sessionStorage.getItem('pr-mount'))</script> </p>
+                                <p class="product-mount"><script>document.write(sessionStorage.getItem('pr-mount')==null?0:sessionStorage.getItem('pr-mount'))</script></p>
                             </i>
                         </a>
                     </div>
@@ -260,12 +260,12 @@
                     <div class="cus-shopping-cart">
                         <a href="../HTML/cart-form.html" class="text-white">
                             <i class="ti-shopping-cart">
-                                <p class="product-mount"> <script>document.write(sessionStorage.getItem('pr-mount'))</script> </p>
+                                <p class="product-mount"> <script>document.write(sessionStorage.getItem('pr-mount')==null?0:sessionStorage.getItem('pr-mount'))</script> </p>
                             </i>
                         </a>
                         <ul class="drop-list-item list-unstyled">
                             <li><a href="#">Đã mua</a></li>
-                            <li><a href="../HTML/cart-form.html" onclick="sessionData()">Hàng chờ</a></li>
+                            <li><a href="../HTML/cart-form.html" >Hàng chờ</a></li>
                         </ul>
                         <h4>Giỏ hàng</h4>
                     </div>
@@ -277,7 +277,7 @@
                             <li><a href="#"><i class="ti-settings"
                                         style="font-size: 18px;margin-top: 0px;"></i>&nbsp;&nbsp;&nbsp;Cài đặt thông tin</a></li>
                             <li><a href="../HTML/formSignLog.html"><i class="fa fa-sign-in"
-                                        style="font-size: 18px;margin-top: 0px;" onclick="sessionData()"></i>&nbsp;&nbsp;&nbsp;Đăng nhập</a></li>
+                                        style="font-size: 18px;margin-top: 0px;" ></i>&nbsp;&nbsp;&nbsp;Đăng nhập</a></li>
                         </ul>
                     </div>
                 </div>
@@ -556,54 +556,16 @@
             <nav style="--bs-breadcrumb-divider: '>';">
                 <ol class="breadcrumb fs-4 m-5 bg-white ">
                     <li class="breadcrumb-item">
-                        <a href="../HTML/index.html" class="link" onclick="sessionData()">Trang chủ</a>
+                        <a href="../HTML/index.html" class="link" >Trang chủ</a>
                     </li>
                     <li class="breadcrumb-item" aria-current="page">Giỏ hàng</li>
                 </ol>
             </nav>
             <div class="col-md-9 col-sm-12">
-                <h2 class="text-dark text-left p-5 border-bottom">BẠN CÓ <script>document.write(sessionStorage.getItem('pr-mount'))</script> SẢN PHẨM TRONG GIỎ HÀNG
+                <h2 class="text-dark text-left p-5 border-bottom">BẠN CÓ <script>document.write(sessionStorage.getItem('pr-mount')==null?0:sessionStorage.getItem('pr-mount'))</script> SẢN PHẨM TRONG GIỎ HÀNG
                 </h2>
-                <div class="row">
-                    <div class="col-md-7 col-sm-12 col-12 p-3 text-dark fs-2 font-weight-bold">
-                        Sản phẩm
-                        <div class="row">
-                            <div class="col-md-4 col-sm-4 col-4 text-left">
-                                <a href="">
-                                    <img src="../Assets/images/header/SS-A34-best-Selling.jpg"
-                                        alt=""></a>
-                            </div>
-                            <div class="col-md-8 col-sm-8 col-8 text-left">
-                                <a href="" class="fs-4 text-danger">Samsung Galaxy A34 5G
-                                    128GB</a>
-                                <ul class="fs-5 text-justify text-dark fs-4">
-                                    <li><i class="fa fa-mobile"></i>&nbsp;Chính: 6.6 inch, Super AMOLED, FHD+, 1080 x 2400 Pixels</li>
-                                    <li><i class="fa fa-camera"></i>&nbsp;48.0 MP + 8.0 MP + 5.0 MP</li>
-                                    <li><i class="fa fa-camera-retro"></i>&nbsp;MediaTek Dimensity 1080</li>
-                                    <li><i class="fa fa-microchip"></i>&nbsp;128 GB</li>
-                                    <li><i class="fa fa-hdd-o"></i>&nbsp;Chính: 6.6 inch, Super AMOLED, FHD+, 1080 x 2400 Pixels</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-2 col-sm-6 col-6 p-3 text-dark fs-2 font-weight-bold">
-                        Số lượng
-                        <div class="row mt-5">
-                            <div class="col-md-4 col-sm-4 col-4">
-                                <button onclick="btnClickProductMount(this)" name="desc"  class="btn btn-info w-100 fs-5">-</button>
-                            </div>
-                            <div class="col-md-4 col-sm-4 col-4">
-                                <span class="form-control text-center fs-5 h-100 spn-mount">1</span>
-                            </div>
-                            <div class="col-md-4 col-sm-4 col-4">
-                                <button onclick="btnClickProductMount(this)" name="asc" class="btn btn-info w-100 fs-5">+</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6 col-6 p-3 text-dark fs-2 font-weight-bold">Đơn giá
-                        <p class="mt-5 text-danger cost-state">17.930.000<u class="text-decoration-underline">đ</u>
-                        </p>
-                    </div>
+                <div id="cart-Product" class="row">
+                    
                 </div>
                 <div class="row m-5">
                     <div class="col-md-5 col-sm-12 text-left">
@@ -878,9 +840,10 @@
             </p>
         </div>
     </div>
-    <script src="../JS/header.js"></script>
     <script src="../JS/product.js"></script>
     <script src="../JS/Bonus_data_render.js"></script>
+    <script src="../JS/cartForm.js"></script>
+    <script src="../JS/header.js"></script>
     </div>
 </body>
 

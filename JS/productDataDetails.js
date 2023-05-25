@@ -146,7 +146,7 @@ const data = [
     }
 ]
 data.forEach(function (item, index) {
-    if(item.id != 'P1' && item.id == sessionStorage.getItem(item.id))
+    if(item.id != 'P5' && item.id == sessionStorage.getItem(item.id))
     {
         document.getElementById('details-product').innerHTML = `
         <nav style="--bs-breadcrumb-divider: '>';">
@@ -161,7 +161,7 @@ data.forEach(function (item, index) {
         <div class="col-md-6">
             <h1>${item.name}<span class="text-muted fs-5">(${item.code})</span></h1>
         </div>
-        <div class="col-md-5 col-offset-1 fs-2">
+        <div class="col-md-5 col-offset-1 fs-2 mx-5">
             <i class="fa fa-star text-warning fs-1"></i>
             <i class="fa fa-star text-warning fs-1"></i>
             <i class="fa fa-star text-warning fs-1"></i>
@@ -177,7 +177,7 @@ data.forEach(function (item, index) {
         <hr class="w-100" style="border-top: 1px;">
         <div class="row">
             <div class="col-md-6 col-sm-12 col-12 my-5  ">
-                <img src="${item.img}" alt="ip 14 promax" width="100%"
+                <img src="${item.img}" class="big-img_intro" alt="ip 14 promax" width="95%"
                     height="600px">
                 <div>
                     <ul class="fs-5 text-justify text-dark fs-4 m-5">
@@ -229,7 +229,7 @@ data.forEach(function (item, index) {
             <div class="col-md-6 col-sm-12 col-12">
                 <div class="row">
                     <div class="col-md-6 col-sm-6 col-6  mx-3">
-                        <h2 class="text-danger font-weight-bold fs-1 text-left">${item.curCost}đ<span
+                        <h2 class="text-danger font-weight-bold fs-1 text-left">${item.curCost}<span
                                 class="text-decoration-underline">đ</span>&nbsp;&nbsp;<span
                                 class="text-muted text-decoration-line-through fs-5">${item.oldCost}đ</span></h2>
                         <h4 class="text-danger text-left"> <i class="fa fa-bookmark text-warning"></i>+${item.rewardPoint} điểm thưởng dự
@@ -680,5 +680,4 @@ data.forEach(function (item, index) {
     </div>
         `;
     }
-    sessionStorage.clear();
 })

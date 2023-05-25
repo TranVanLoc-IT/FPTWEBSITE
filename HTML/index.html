@@ -19,7 +19,6 @@
     <link rel="stylesheet" href="../CSS/responsive_grid.css" type="text/css">
     <link rel="stylesheet" href="../CSS/cart-form.css" />
     <!-- js -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <!-- bootstrap 5-->
     <link href="../Assets/bootstrap-5.0.2-dist/css/bootstrap.min.css" rel="stylesheet">
@@ -82,7 +81,7 @@
                                         <div class="accordion-body">
                                             <ul class="list-unstyled">
                                                 <li><a href="#">Cài đặt thông tin</a></li>
-                                                <li><a href="../HTML/formSignLog.html" onclick="sessionData()">Đăng nhập</a></li>
+                                                <li><a href="../HTML/formSignLog.html" >Đăng nhập</a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -231,9 +230,9 @@
                         </a>
                     </div>
                     <div class="shopping-cart-mobile">
-                        <a href="../HTML/cart-form.html" onclick="sessionData()" class="text-white">
+                        <a href="../HTML/cart-form.html"  class="text-white">
                             <i class="ti-shopping-cart">
-                                <p class="product-mount">0</p>
+                                <p class="product-mount"><script>document.write(sessionStorage.getItem('pr-mount')==null?0:sessionStorage.getItem('pr-mount'))</script></p>
                             </i>
                         </a>
                     </div>
@@ -262,14 +261,14 @@
                         </a>
                     </div>
                     <div class="cus-shopping-cart">
-                        <a href="../HTML/cart-form.html" onclick="sessionData()" class="text-white">
+                        <a href="../HTML/cart-form.html"  class="text-white">
                             <i class="ti-shopping-cart">
-                                <p class="product-mount">0</p>
+                                <p class="product-mount"><script>document.write(sessionStorage.getItem('pr-mount')==null?0:sessionStorage.getItem('pr-mount'))</script></p>
                             </i>
                         </a>
                         <ul class="drop-list-item list-unstyled">
                             <li><a href="#">Đã mua</a></li>
-                            <li><a href="../HTML/cart-form.html" onclick="sessionData()">Hàng chờ</a></li>
+                            <li><a href="../HTML/cart-form.html" >Hàng chờ</a></li>
                         </ul>
                         <h4>Giỏ hàng</h4>
                     </div>
@@ -281,7 +280,7 @@
                             <li><a href="#"><i class="ti-settings"
                                         style="font-size: 18px;margin-top: 0px;"></i>&nbsp;&nbsp;&nbsp;Cài đặt thông tin</a></li>
                             <li><a href="../HTML/formSignLog.html"><i class="fa fa-sign-in"
-                                        style="font-size: 18px;margin-top: 0px;" onclick="sessionData()"></i>&nbsp;&nbsp;&nbsp;Đăng nhập</a></li>
+                                        style="font-size: 18px;margin-top: 0px;" ></i>&nbsp;&nbsp;&nbsp;Đăng nhập</a></li>
                         </ul>
                     </div>
                 </div>
@@ -462,11 +461,11 @@
                                 <div class="top-selling">
                                     <h4 class="text-left">Bán chạy nhất</h4>
                                     <div class="img-top-sell">
-                                        <a href="../HTML/detailsProduct.html" onclick="sessionData()"><img src="../Assets/images/header/iphone14-pro-best-selling.jpg"
+                                        <a href="../HTML/detailsProduct.html" ><img src="../Assets/images/header/iphone14-pro-best-selling.jpg"
                                                 alt=""></a>
                                     </div>
                                     <div class="descript-top-sell">
-                                        <a href="../HTML/detailsProduct.html" onclick="sessionData()">iPhone 14 Pro Max
+                                        <a href="../HTML/detailsProduct.html" >iPhone 14 Pro Max
                                             128GB</a>
                                         <p>27.190.000 <span style="text-decoration: underline;">đ</span></p>
                                     </div>
@@ -675,7 +674,7 @@
                 <div class="desperate"></div>
                 <div class="content-phone product-section">
                     <div class="row">
-                        <h3 class="col-md-6 col-6 col-sm-6 text-left">ĐIỆN THOẠI NỔI BẬT NHẤT</h3>
+                        <h3 class="col-md-6 col-6 col-sm-6 text-left m-4 fs-1">ĐIỆN THOẠI NỔI BẬT NHẤT</h3>
                         <form action="#" method="GET" name="phoneForm" class="col-md-4 col-sm-6 col-6 ms-auto fs-3">
                             <select name="phoneBand" id="phoneBand"   title="Chọn hãng">
                               <option value="Apple">Apple</option>
@@ -701,7 +700,7 @@
                 <div class="desperate"></div>
                 <div class="content-laptop product-section">
                     <div class="row">
-                        <h3 class="col-md-6 col-6 col-sm-6 text-left">LAPTOP</h3>
+                        <h3 class="col-md-6 col-6 col-sm-6 text-left m-4 fs-1">LAPTOP</h3>
                         <form action="#" method="GET" name="lapForm" class="col-md-4 col-sm-6 col-6 ms-auto fs-3">
                             <select name="lapBand" id="lapBand"   title="Chọn hãng">
                               <option value="Macbook">Macbook</option>
@@ -726,7 +725,7 @@
                 <div class="desperate"></div>
                 <div class="content-desktop product-section">
                     <div class="row">
-                        <h3 class="col-md-6 col-6 col-sm-6 text-left">MÁY TÍNH ĐỂ BÀN</h3>
+                        <h3 class="col-md-6 col-6 col-sm-6 text-left m-4 fs-1">MÁY TÍNH ĐỂ BÀN</h3>
                         <form action="#" method="GET" name="pcForm" class="col-md-4 col-sm-6 col-6 ms-auto fs-3">
                             <select name="pcBand" id="pcBand"   title="Chọn hãng">
                               <option value="pc1">Máy tính bàn</option>
@@ -750,7 +749,7 @@
                 <div class="desperate"></div>
                 <div class="content-tablet product-section">
                     <div class="row">
-                        <h3 class="col-md-6 col-6 col-sm-6 text-left">MÁY TÍNH BẢNG</h3>
+                        <h3 class="col-md-6 col-6 col-sm-6 text-left m-4 fs-1">MÁY TÍNH BẢNG</h3>
                         <form action="#" method="GET" name="ipadForm" class="col-md-4 col-sm-6 col-6 ms-auto fs-3">
                             <select name="ipadBand" id="ipadBand"   title="Chọn hãng">
                               <option value="ipad1">iPad Air</option>
@@ -767,7 +766,7 @@
                 </div>
                 <div class="content-head-phone product-section">
                     <div class="row">
-                        <h3 class="col-md-6 col-6 col-sm-6 text-left">ÂM THANH</h3>
+                        <h3 class="col-md-6 col-6 col-sm-6 text-left m-4 fs-1">ÂM THANH</h3>
                         <form action="#" method="GET" name="soundForm" class="col-md-4 col-sm-6 col-6 ms-auto fs-3">
                             <select name="soundBand" id="soundBand" title="Chọn hãng">
                               <option value="s1">Tai nghe Bluetooth</option>
@@ -786,7 +785,7 @@
                 </div>
                 <div class="content-watch product-section">
                     <div class="row">
-                        <h3 class="col-md-6 col-6 col-sm-6 text-left">ĐỒNG HỒ THÔNG MINH</h3>
+                        <h3 class="col-md-6 col-6 col-sm-6 text-left m-4 fs-1">ĐỒNG HỒ THÔNG MINH</h3>
                         <form action="#" method="GET" name="clockForm" class="col-md-4 col-sm-6 col-6 ms-auto fs-3">
                             <select name="clockBand" id="clockBand" title="Chọn hãng">
                               <option value="c1">Apple Watch</option>
@@ -804,7 +803,7 @@
                 </div>
                 <div class="content-house product-section">
                     <div class="row">
-                        <h3 class="col-md-6 col-6 col-sm-6 text-left">NHÀ THÔNG MINH</h3>
+                        <h3 class="col-md-6 col-6 col-sm-6 text-left m-4 fs-1">NHÀ THÔNG MINH</h3>
                         <form action="#" method="GET" name="sHomeForm" class="col-md-4 col-sm-6 col-6 ms-auto fs-3">
                             <select name="sHomeBand" id="sHomeBand" title="Chọn hãng">
                               <option value="sh1">Máy lọc không khí</option>
@@ -823,7 +822,7 @@
                 </div>
                 <div class="content-tivi product-section">
                     <div class="row">
-                        <h3 class="col-md-6 col-6 col-sm-6 text-left">TIVI</h3>
+                        <h3 class="col-md-6 col-6 col-sm-6 text-left m-4 fs-1">TIVI</h3>
                         <form action="#" method="GET" name="tvForm" class="col-md-4 col-sm-6 col-6 ms-auto fs-3">
                             <select name="tvBand" id="tvBand" title="Chọn hãng">
                               <option value="tv1">Samsung</option>
@@ -1138,7 +1137,6 @@
         </div>
         <script src="../JS/header.js"></script>
         <script src="../JS/smallProduct.js"></script>
-        <script src="../JS/swiper.js"></script>
         <script src="../JS/product.js"></script>
 
 </body>

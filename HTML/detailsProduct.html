@@ -82,7 +82,7 @@
                                         <div class="accordion-body text-left fs-4">
                                             <ul class="list-unstyled">
                                                 <li><a href="#">Cài đặt thông tin</a></li>
-                                                <li><a href="../HTML/formSignLog.html" onclick="sessionData()">Đăng nhập</a></li>
+                                                <li><a href="../HTML/formSignLog.html" >Đăng nhập</a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -231,12 +231,10 @@
                         </a>
                     </div>
                     <div class="shopping-cart-mobile">
-                        <a href="../HTML/cart-form.html" class="text-white" onclick="sessionData()">
+                        <a href="../HTML/cart-form.html" class="text-white" >
                             <i class="ti-shopping-cart">
                                 <p class="product-mount">
-                                    <script>
-                                        document.write(sessionStorage.getItem('pr-mount'))
-                                    </script>
+                                    <script>document.write(sessionStorage.getItem('pr-mount')==null?0:sessionStorage.getItem('pr-mount'))</script>
                                 </p>
                             </i>
                         </a>
@@ -267,13 +265,13 @@
                         <a href="../HTML/cart-form.html" class="text-white">
                             <i class="ti-shopping-cart">
                                 <p class="product-mount">
-                                    <script>document.write(sessionStorage.getItem('pr-mount'))</script>
+                                    <script>document.write(sessionStorage.getItem('pr-mount')==null?0:sessionStorage.getItem('pr-mount'))</script>
                                 </p>
                             </i>
                         </a>
                         <ul class="drop-list-item list-unstyled">
                             <li><a href="#">Đã mua</a></li>
-                            <li><a href="../HTML/cart-form.html" onclick="sessionData()">Hàng chờ</a></li>
+                            <li><a href="../HTML/cart-form.html" >Hàng chờ</a></li>
                         </ul>
                         <h4>Giỏ hàng</h4>
                     </div>
@@ -466,11 +464,11 @@
                                 <div class="top-selling">
                                     <h4 class="text-left">Bán chạy nhất</h4>
                                     <div class="img-top-sell">
-                                        <a href="../HTML/detailsProduct.html" onclick="sessionData()"><img src="../Assets/images/header/iphone14-pro-best-selling.jpg"
+                                        <a href="../HTML/detailsProduct.html" ><img src="../Assets/images/header/iphone14-pro-best-selling.jpg"
                                                 alt=""></a>
                                     </div>
                                     <div class="descript-top-sell">
-                                        <a href="../HTML/detailsProduct.html" onclick="sessionData()">iPhone 14 Pro Max
+                                        <a href="../HTML/detailsProduct.html" >iPhone 14 Pro Max
                                             128GB</a>
                                         <p>27.190.000 <span style="text-decoration: underline;">đ</span></p>
                                     </div>
@@ -564,7 +562,7 @@
             <nav style="--bs-breadcrumb-divider: '>';">
                 <ol class="breadcrumb fs-4 m-5 bg-white ">
                     <li class="breadcrumb-item">
-                        <a href="../HTML/index.html" class="link" onclick="sessionData()">Trang chủ</a>
+                        <a href="../HTML/index.html" class="link" >Trang chủ</a>
                     </li>
                     <li class="breadcrumb-item" aria-current="page">Iphone 14 promax</li>
                 </ol>
@@ -573,7 +571,7 @@
                 <div class="col-md-6">
                     <h1>Iphone 14 promax 512GB <span class="text-muted fs-5">(No.7552792937)</span></h1>
                 </div>
-                <div class="col-md-5 col-offset-1 fs-2">
+                <div class="col-md-5 col-offset-1 fs-2 mx-5">
                     <i class="fa fa-star text-warning fs-1"></i>
                     <i class="fa fa-star text-warning fs-1"></i>
                     <i class="fa fa-star text-warning fs-1"></i>
@@ -588,8 +586,8 @@
                 </div>
                 <hr class="w-100" style="border-top: 1px;">
                 <div class="row">
-                    <div class="col-md-6 col-sm-12 col-12 my-5  ">
-                        <img src="../Assets/images/phone-product/ip_14-pro.png" alt="ip 14 promax" width="100%"
+                    <div class="col-md-6 col-sm-12 col-12 my-5">
+                        <img src="../Assets/images/phone-product/ip_14-pro.png" class="big-img_intro" alt="ip 14 promax" width="95%"
                             height="600px">
                         <div>
                             <ul class="fs-5 text-justify text-dark fs-4 m-5">
@@ -947,7 +945,7 @@
                                 <p>Trả góp chỉ từ 1.000.000đ/ tháng</p>
                             </div>
                         </div>
-                        <div class="w-75 mx-3">
+                        <div class="w-100 text-justify mx-3">
                             <table border="1" class="table table-hover table-primary">
                                 <tr>
                                     <th>Nhận ngay khuyến mãi đặc biệt</th>
@@ -1123,7 +1121,7 @@
             </div>
             <div class="row">
                 <h2 class="text-left px-5">Câu hỏi thường gặp</h2>
-                <div class="accordion" id="accordionHotQuestion">
+                <div class="accordion mx-1" id="accordionHotQuestion">
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingOne">
                             <button class="accordion-button fs-3" type="button" data-bs-toggle="collapse"
@@ -1200,7 +1198,7 @@
                 <div class="col-md-4 pr-data">
                     <div class="row">
                         <div class="col-md-2 fs-3 pr-cap text-right">
-                            5&nbsp; <i class="fa fa-star text-danger"></i>
+                            5&nbsp; <i class="fa fa-star text-warning my-2"></i>
                         </div>
                         <div class="col-md-8">
                             <div class="progress" style="height: 10px">
@@ -1214,7 +1212,7 @@
                     </div>
                     <div class="row">
                         <div class="col-md-2 fs-3 pr-cap text-right">
-                            4&nbsp; <i class="fa fa-star text-danger"></i>
+                            4&nbsp; <i class="fa fa-star text-warning my-2"></i>
                         </div>
                         <div class="col-md-8">
                             <div class="progress" style="height: 10px">
@@ -1228,7 +1226,7 @@
                     </div>
                     <div class="row">
                         <div class="col-md-2 fs-3 pr-cap text-right">
-                            3&nbsp; <i class="fa fa-star text-danger"></i>
+                            3&nbsp; <i class="fa fa-star text-warning my-2"></i>
                         </div>
                         <div class="col-md-8">
                             <div class="progress" style="height: 10px">
@@ -1242,7 +1240,7 @@
                     </div>
                     <div class="row">
                         <div class="col-md-2 fs-3 pr-cap text-right">
-                            2&nbsp; <i class="fa fa-star text-danger"></i>
+                            2&nbsp; <i class="fa fa-star text-warning my-2"></i>
                         </div>
                         <div class="col-md-8">
                             <div class="progress" style="height: 10px">
@@ -1256,7 +1254,7 @@
                     </div>
                     <div class="row">
                         <div class="col-md-2 fs-3 pr-cap text-right">
-                            1&nbsp; <i class="fa fa-star text-danger"></i>
+                            1&nbsp; <i class="fa fa-star text-warning my-2"></i>
                         </div>
                         <div class="col-md-8">
                             <div class="progress" style="height: 10px">

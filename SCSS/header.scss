@@ -223,8 +223,9 @@ i{
     margin-top: 5px;
     float: left;
     width: 60%;
-    font-size: 14px;
-    line-height: 16px;
+    font-size: 16px;
+    font-weight: bolder;
+    line-height: 20px;
 }
 .mobile-menu div i .mount-of{
     @include spacing($t:0px, $l:28px);

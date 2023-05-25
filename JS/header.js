@@ -1,5 +1,4 @@
 
-import '../JS/product'
 // nav-mobile-js
 function welcome(){
     console.log(sessionStorage.getItem('paIn'));
@@ -22,40 +21,6 @@ for(let i = 0; i < _mobileDropdown.length; i++)
     _mobileDropdown[i].addEventListener('mouseover',function(){
         this.style.height = "50px";
     });
-}
-//
-function btnClickProductMount(e){
-    const grandE = e.parentElement.parentElement;
-    var getCost = grandE.parentElement.parentElement.querySelector("p.cost-state");
-    var getMount = grandE.querySelector(".spn-mount");
-    var mountState = parseInt(getMount.textContent);
-    let oldMount = mountState;
-    getCost.style.direction = "rtl";
-    var costState = parseFloat(getCost.textContent.replace(/\.|\đ/g,''));
-    if( mountState >= 1)
-    {
-        if(e.name == "asc")
-        {
-            mountState++;
-            addProduct();
-        }
-        else{
-            mountState--;
-            removeProduct();
-        }
-        costState = (costState + (costState / (mountState == 1 ? 2 : oldMount < mountState ? mountState - 1 : oldMount))*(oldMount < mountState ? 1 : -1));
-        getMount.textContent = mountState;
-        getCost.innerHTML = costState.toLocaleString('vi-VN',{minimumFractionDigitsch: 3}) + '<span class="text-decoration-underline">đ</span>';
-    }
-    totalMoney();
-}
-function totalMoney(){
-    let getAll = document.querySelectorAll('.cost-state');
-    var total = 0;
-    getAll.forEach(function(item,index){
-        total += parseFloat(item.textContent.replace(/\.|\đ/g,''));
-    });
-    document.querySelector(".temp-money").textContent = total.toLocaleString('vi-VN');
 }
 // form for shipping cart
 function displayShipForm(value){
