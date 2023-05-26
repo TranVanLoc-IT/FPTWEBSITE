@@ -90,7 +90,7 @@ handle_button.forEach ((crr,index) => {
     handle_button[0].onclick = (e) =>{
         e.preventDefault();
         if(KiemTraDL_login() == true){
-           mainPage.click();
+           mainPage[0].click();
         }
     }
 
