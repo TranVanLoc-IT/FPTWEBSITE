@@ -75,12 +75,12 @@
     }
 }
 @media (width <= 559px) {
-    /* .product-img{
+     .product-img{
         height: 60vw;
         padding-top: 43px;
     }
     .product-img a{
         width: 95% !important;
         height: 80% !important;
-    } */
+    } 
 }
