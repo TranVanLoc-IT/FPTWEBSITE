@@ -247,7 +247,6 @@ function KiemTraQMK3(){
         for (let i = 0; i < gmailArray.length; i++){
             if (email_user.value == gmailArray[i]){
                 passArray[i] = Passqmk;
-                alert("Dang nhap thanh cong");
             }
         }
     }

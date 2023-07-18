@@ -1,4 +1,16 @@
-@media (width < 768px) {
+@media (821px> width > 782px)
+{
+     
+      .product-img{
+        height: 13.5vw;
+        padding-top: 20px;
+    }
+    .product-img>a{
+        width: 95% !important;
+        height: 95% !important
+    }
+}
+@media (width < 782px) {
     #header {
         height: 110px;
     }
@@ -77,10 +89,13 @@
 @media (width <= 559px) {
      .product-img{
         height: 60vw;
-        padding-top: 43px;
+        padding-top: 50px;
     }
     .product-img a{
         width: 95% !important;
         height: 80% !important;
-    } 
+    }
+    .contact-mobile{
+        font-size: 12px !important;
+      }
 }
